@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Elena Katasonova](https://up.htmlacademy.ru/htmlcss/20/user/579401).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Рудов](https://up.htmlacademy.ru/htmlcss/20/user/345377).
 
 ---
 
