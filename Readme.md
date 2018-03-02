@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Elena Katasonova](https://up.htmlacademy.ru/htmlcss/20/user/579401).
-* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudovhttps://github.com/kidwm/brackets-editorconfig.git).
 
 ---
 
