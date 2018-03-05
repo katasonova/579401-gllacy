@@ -11,7 +11,7 @@
     <nav class="main-navigation">
       <!--Не совсем понимаю почему нужен этот контейнер и почему он ссылкой без href-->
       <a class="main-header-logo">
-        <img src="img/logo.png" width="" height="" alt="Логотип магазина мороженного «Глейси»">
+        <img src="img/logo.png" width="" height="" alt="Логотип магазина мороженого «Глейси»">
       </a>
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a></li>
@@ -19,17 +19,31 @@
         <li><a href="company.html">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="login-link">Вход</li>
-        <li class="cart">Пусто</li>
+        <li class="user-navigation-login-link">Вход</li>
+        <li class="user-navigation-cart">Пусто</li>
       </ul>
     </nav>
     <span class="search">Поиск</span>
-    <span class="working-time">с 10 до 20, ежедневно</span>
-    <span class="tel">8 812 450-25-25</span>
+    <p class="working-time">с 10 до 20, ежедневно
+      <span class="tel">8 812 450-25-25</span></p>
   </header>
 
+  <main class="container">
+    <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
+
+    <section class="slider">
+      <h2 class="visually-hidden">Хиты продаж</h2>
+      <p class="slider-promo">Крем-брюле и пломбир с малиновым джемом</p>
+      <ul class="slider-main">
+        <li class="slider-main-item"><img src="img/slider1.jpg" width="" height="" alt="Крем-брюле и пломбир с малиновым джемом"></li>
+        <li class="slider-main-item"><img src="img/slider2.jpg" width="" height="" alt="Шоколадный пломбир и лимонный сорбет"></li>
+        <li class="slider-main-item"><img src="img/slider3.jpg" width="" height="" alt="Пломбир с помадкой и клубничный щербет"></li>
+      </ul>
+      <button class="button slider-button">Давайте оба!</button>
+    </section>
 
 
+  </main>
 
 </body>
 
