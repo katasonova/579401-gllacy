@@ -9,156 +9,155 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <!--Не совсем понимаю почему нужен этот контейнер и почему он ссылкой без href-->
       <a class="main-navigation__logo" href="index.html">
-        <img src="img/logo.png" width="" height="" alt="Логотип магазина мороженого «Глейси»">
+        <img class="main-navigation__image" src="img/logo.png" width="" height="" alt="Логотип магазина мороженого «Глейси»">
       </a>
-      <ul class="main-navigation__site">
-        <li class="main-navigation__current">Каталог</li>
-        <li><a href="services.html">Доставка и оплата</a></li>
-        <li><a href="company.html">О Компании</a></li>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item"><a class="main-navigation__active">Каталог</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="services.html">Доставка и оплата</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="company.html">О Компании</a></li>
       </ul>
     </nav>
     <ul class="user-navigation">
-      <li class="user-navigation__login-link"><a>Вход</a></li>
-      <!--Не знаю как сделать будто в корзине два товара как на акете, эта иконка?-->
-      <li class="user-navigation__cart"><a>2 товара</a></li>
+      <li class="user-navigation__login"><a class="user-navigation__link">Вход</a></li>
+      <li class="user-navigation__cart"><a class="user-navigation__link">2 товара</a></li>
     </ul>
     <span class="main-header__search">Поиск</span>
     <p class="main-header__working-time">с 10 до 20, ежедневно
-      <span class="main-header__tel">8 812 450-25-25</span></p>
+      <span class="main-header__phone">8 812 450-25-25</span></p>
   </header>
 
   <main class="container">
-    <h1>Сливочное мороженное</h1>
+    <h1 class="main-heading">Сливочное мороженное</h1>
 
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li class="bradcrumbs__current">Сливочное</li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+      <li class="bradcrumbs__active"><a class="breadcrumbs__link">Сливочное</a></li>
     </ul>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!--Здесь будет форма-->
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список доступных видов мороженного</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             <p class="catalog__price">
-              <b>310 P<span>/кг</span></b>
+              310 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочно-кофейное с кусочками шоколада</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочно-кофейное мороженое с кусочками шоколада">
             <p class="catalog__price">
-              <b>380 P<span>/кг</span></b>
+              380 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
             <p class="catalog__price">
-              <b>355 P<span>/кг</span></b>
+              355 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное крем-брюле мороженое с карамельной подливкой">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное крем-брюле с карамельной подливкой</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное крем-брюле мороженое с карамельной подливкой">
             <p class="catalog__price">
-              <b>415 P<span>/кг</span></b>
+              415 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с брусничным джемом</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с брусничным джемом">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с брусничным джемом</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с брусничным джемом">
             <p class="catalog__price">
-              <b>325 P<span>/кг</span></b>
+              325 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное-черничное с цельными ягодами черники</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное-черничное мороженое с цельными ягодами черники">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное-черничное с цельными ягодами черники</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное-черничное мороженое с цельными ягодами черники">
             <p class="catalog__price">
-              <b>410 P<span>/кг</span></b>
+              410 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное-лимонное с карамельной присыпкой</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное-лимонное мороженое с карамельной присыпкой">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное-лимонное с карамельной присыпкой</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное-лимонное мороженое с карамельной присыпкой">
             <p class="catalog__price">
-              <b>375 P<span>/кг</span></b>
+              375 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с шоколадной стружкой</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с шоколадной стружкой">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с шоколадной стружкой</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с шоколадной стружкой">
             <p class="catalog__price">
-              <b>320 P<span>/кг</span></b>
+              320 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с шоколадной стружкой</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с шоколадной стружкой">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с шоколадной стружкой</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с шоколадной стружкой">
             <p class="catalog__price">
-              <b>320 P<span>/кг</span></b>
+              320 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочно-ванильное с кусочками шоколада</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочно-ванильное мороженое с кусочками шоколада">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочно-ванильное с кусочками шоколада</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочно-ванильное мороженое с кусочками шоколада">
             <p class="catalog__price">
-              <b>440 P<span>/кг</span></b>
+              440 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с ментоловым сиропом</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с ментоловым сиропом">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с ментоловым сиропом</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с ментоловым сиропом">
             <p class="catalog__price">
-              <b>435 P<span>/кг</span></b>
+              435 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с кусочками черного шоколада</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с кусочками черного шоколада">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с кусочками черного шоколада</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с кусочками черного шоколада">
             <p class="catalog__price">
-              <b>355 P<span>/кг</span></b>
+              355 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
         <li class="catalog__item">
-          <a href="catalog-item.html">
-            <h3>Сливочное с мятным сиропом</h3>
-            <img src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с мятным сиропом">
+          <a class="catalog__link" href="catalog-item.html">
+            <h3 class="catalog__heading">Сливочное с мятным сиропом</h3>
+            <img class="catalog__image" src="img/product-1.jpg" width="" height="" alt="Сливочное мороженое с мятным сиропом">
             <p class="catalog__price">
-              <b>420 P<span>/кг</span></b>
+              420 ₽<span class="catalog__weight">/кг</span>
             </p>
           </a>
         </li>
@@ -166,33 +165,35 @@
     </section>
 
     <ul class="pagination">
-      <li class="pagination__item pagination__current">1</li>
-      <li class="pagination__item"><a href="#">2</a></li>
-      <li class="pagination__item"><a href="#">3</a></li>
-      <li class="pagination__item"><a href="#">4</a></li>
-      <li class="pagination__item"><a href="#">5</a></li>
+      <li class="pagination__item pagination__prev"><a class="pagination__link">Назад</a></li>
+      <li class="pagination__item pagination__current"><a class="pagination__link">1</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+      <li class="pagination__item pagination__next"><a class="pagination__link" href="#">Вперед</a></li>
     </ul>
   </main>
 
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="footer-social__list">
-        <li class="footer-social__item"><a href="#">Твиттер</a></li>
-        <li class="footer-social__item"><a href="#">Инстаграмм</a></li>
-        <li class="footer-social__item"><a href="#">Фейсбук</a></li>
-        <li class="footer-social__item"><a href="#">Вконтакте</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="#">Твиттер</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="#">Инстаграмм</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="#">Фейсбук</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="#">Вконтакте</a></li>
       </ul>
     </div>
 
-    <ul class="footer-menu">
-      <li class="footer-meu__item"><a href="#">Для поставщиков</a></li>
-      <li class="footer-meu__item"><a href="#">О производстве</a></li>
-      <li class="footer-meu__item"><a href="#">Наши документы</a></li>
-      <li class="footer-meu__item"><a href="#">Экологические стандарты</a></li>
+    <ul class="footer-menu_list">
+      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Для поставщиков</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="#">О производстве</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наши документы</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Экологические стандарты</a></li>
     </ul>
 
     <p class="main-footer__copyright">
-      Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017
+      Сделано в <a class="button main-footer__button" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017
     </p>
   </footer>
 
