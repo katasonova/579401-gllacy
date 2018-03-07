@@ -19,15 +19,22 @@
       </ul>
     </nav>
     <ul class="user-navigation">
-      <li class="user-navigation__login"><a class="user-navigation__link">Вход</a></li>
-      <li class="user-navigation__cart"><a class="user-navigation__link">Пусто</a></li>
+      <li class="user-navigation__login"><a class="user-navigation__link" href="login.html">Вход</a></li>
+      <li class="user-navigation__cart"><a class="user-navigation__link" href="cart.html">Пусто</a></li>
     </ul>
+    <div>
+      <!--Вход-->
+      <!--Здесь форма-->
+    </div>
     <span class="main-header__search">Поиск</span>
+    <div>
+      <span>Что ищем?</span>
+    </div>
     <p class="main-header__working-time">с 10 до 20, ежедневно
       <span class="main-header__phone">8 812 450-25-25</span></p>
   </header>
 
-  <main class="container">
+  <main class="page-main">
     <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 
     <section class="slider">
@@ -35,7 +42,7 @@
       <div class="slider-item">
         <p class="slider-item__description">Крем-брюле и пломбир с малиновым джемом</p>
         <img class="slider-item__image" src="img/slider1.jpg" width="" height="" alt="Крем-брюле и пломбир с малиновым джемом">
-        <a class="button slider-item__button">Давайте оба!</a>
+        <a class="button slider-item__link" href="plombir.html">Давайте оба!</a>
       </div>
       <div class="slider-item">
         <p class="slider-item__description">Шоколадный пломбир и лимонный сорбет</p>
@@ -57,14 +64,14 @@
           <p class="special-offer__description">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a class="button special-offer__button" href="catalog.html">Хочу варенье!</a>
+          <a class="button special-offer__link" href="catalog.html">Хочу варенье!</a>
         </li>
         <li class="special-offer__item">
           <h3 class="special-offer__heading">Шоколадки даром!</h3>
           <p class="special-offer__description">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="button special-offer__button" href="catalog.html">Хочу шоколадки!</a>
+          <a class="button special-offer__link" href="catalog.html">Хочу шоколадки!</a>
         </li>
       </ul>
     </section>
@@ -132,7 +139,7 @@
       </ul>
     </section>
 
-    <div class="container__blog-subscription">
+    <div class="container">
       <article class="blog">
         <h2 class="blog__heading">10 способов сервировки фруктовых щербетов к столу</h2>
         <p class="blog__description">Новое в нашем блоге</p>
@@ -149,6 +156,7 @@
     </div>
 
     <section class="map">
+      <img class="map__image" src="img/map.jpg" alt="Мы на карте">
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <h3 class="contacts__heading">Адрес главного офиса и офлайн-магазина:</h3>
@@ -167,18 +175,18 @@
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="footer-social__list">
-        <li class="footer-social__item"><a class="footer-social__link" href="#">Твиттер</a></li>
-        <li class="footer-social__item"><a class="footer-social__link" href="#">Инстаграмм</a></li>
-        <li class="footer-social__item"><a class="footer-social__link" href="#">Фейсбук</a></li>
-        <li class="footer-social__item"><a class="footer-social__link" href="#">Вконтакте</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="https://twitter.com">Твиттер</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="https://www.instagram.com">Инстаграмм</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="https://www.facebook.com">Фейсбук</a></li>
+        <li class="footer-social__item"><a class="footer-social__link" href="https://vk.com">Вконтакте</a></li>
       </ul>
     </div>
 
     <ul class="footer-menu_list">
-      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Для поставщиков</a></li>
-      <li class="footer-menu__item"><a class="footer-menu__link" href="#">О производстве</a></li>
-      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наши документы</a></li>
-      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Экологические стандарты</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="suppliers.html">Для поставщиков</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="production.html">О производстве</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="documents.html">Наши документы</a></li>
+      <li class="footer-menu__item"><a class="footer-menu__link" href="standards.html">Экологические стандарты</a></li>
     </ul>
 
     <p class="main-footer__copyright">
@@ -216,18 +224,16 @@
     <a href="#">Новая регистрация</a>
   </p>
 
-  <!--Вход-->
-  <!--Здесь форма-->
-  <span>Что ищем?</span>
-
-  <!--Форма обратной связи-->
-  <!--Здесь форма-->
-  <p>Мы обязательно вам ответим!</p>
-  <span>Как вас зовут?</span>
-  <span>Ваша почта для ответа?</span>
-  <span>Напишите что-нибудь...</span>
-  <a href="#">Отправить</a>
-  <button type="button">Закрыть</button>
+  <div>
+    <!--Форма обратной связи-->
+    <!--Здесь форма-->
+    <p>Мы обязательно вам ответим!</p>
+    <span>Как вас зовут?</span>
+    <span>Ваша почта для ответа?</span>
+    <span>Напишите что-нибудь...</span>
+    <a href="#">Отправить</a>
+    <button type="button">Закрыть</button>
+  </div>
 
 </body>
 
