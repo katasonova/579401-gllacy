@@ -27,6 +27,26 @@
     <ul class="user-navigation">
       <li class="user-navigation__login">
         <a class="user-navigation__link" href="login.html">Вход</a>
+        <!--Вход-->
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="modal-login__item">
+              <label class="visually-hidden" for="modal-login__login">Электронная почта</label>
+              <input id="modal-login__login" type="email" name="login" placeholder="Электронная почта">
+            </p>
+            <p class="modal-login__item">
+              <label class="visually-hidden" for="modal-login__password">Пароль</label>
+              <input id="modal-login__password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="modal-login__info">
+              <a class="modal-login__restore" href="#">Забыли пароль?</a>
+              <a class="modal-login__new-user" href="#">Новая регистрация</a>
+            </p>
+            <!--<a href="#">Отправить</a> Сначало было размечено ссылкой-->
+            <button class="button modal-login__button" type="submit">Войти</button>
+          </form>
+        </section>
       </li>
       <li class="user-navigation__cart">
         <a class="user-navigation__link" href="cart.html">2 товара</a>
@@ -54,7 +74,69 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--Здесь будет форма-->
+      <!--Фильтр товаров-->
+      <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <p class="filters__item">
+          <label for="filters__sort">Сортировка:</label>
+          <select id="filters__sort" name="sort">
+            <option value="по популярности" selected>по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+        </select>
+        </p>
+        <p class="filters__item">
+          <label for="filters__range">Цена: 100 руб. – 500 руб.</label>
+          <input id="filters__range" type="range" name="range">
+        </p>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul class="filters__item">
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-radio" type="radio" name="fat-group" value="0" id="filters__0">
+              <label for="filters__0">0%</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-radio" type="radio" name="fat-group" value="10" checked id="filters__10">
+              <label class="filters__10">до 10%</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-radio" type="radio" name="fat-group" value="30" id="filters__30">
+              <label for="filters__30">до 30%</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-radio" type="radio" name="fat-group" value="30+" id="filters__35">
+              <label for="filters__35">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul class="filters__item">
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-checkbox" type="checkbox" name="chocolate" id="filters__chocolate" checked>
+              <label for="filters__chocolate">шоколадные</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-checkbox" type="checkbox" name="sugar" id="filters__sugar" checked>
+              <label for="filters__sugar">сахарные присыпки</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-checkbox" type="checkbox" name="fruit" id="filters__fruit">
+              <label for="filters__fruit">фрукты</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-checkbox" type="checkbox" name="syrups" id="filters__syrups">
+              <label for="filters__syrups">сиропы</label>
+            </li>
+            <li class="filters__option">
+              <input class="visually-hidden filters__input filters__input-checkbox" type="checkbox" name="jams" id="filters__jams">
+              <label for="filters__jams">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button filters__button" type="submit">Применить</button>
+      </form>
     </section>
 
     <section class="catalog">
@@ -259,8 +341,8 @@
   </footer>
 
   <div>
-    <!--Товары корзины-->
-    <!--Здесь форма-->
+    <!--Товары корзины
+    A это не таблица случайно? формой надо корзину размечать?-->
     <p>
       <span>Пломбир с апельсиновым джемом</span><span>1,5 кг х 200 руб.</span><span>300 руб.</span><button>Удалить</button></p>
     <p><span>Клубничный пломбир с присыпкой из белого шоколада</span><span>1,5 кг х 300 руб.</span><span>450 руб.</span><button>Удалить</button></p>
