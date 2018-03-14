@@ -33,28 +33,35 @@
       <li class="user-navigation__login">
         <a class="user-navigation__link" href="login.html">Вход</a>
 
-          <form class="user-navigation__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="user-navigation__form-item">
-              <label class="user-navigation__form-label" for="user-navigation__form-email">Электронная почта</label>
-              <input class="user-navigation__form-input" id="user-navigation__form-email" type="email" name="login">
-            </p>
-            <p class="user-navigation__form-item">
-              <label class="user-navigation__form-label" for="user-navigation__form-password">Пароль</label>
-              <input class="user-navigation__form-input" id="user-navigation__form-password" type="password" name="password">
-            </p>
-            <p class="user-navigation__form-info">
-              <a class="user-navigation__form-link" href="restore.html">Забыли пароль?</a>
-              <a class="user-navigation__form-link" href="registration.html">Новая регистрация</a>
-            </p>
-            <button class="button user-navigation__form-button" type="submit">Войти</button>
-          </form>
+        <form class="user-navigation__form-login" action="https://echo.htmlacademy.ru" method="post">
+          <p class="user-navigation__form-item">
+            <label class="user-navigation__form-label" for="user-navigation__form-email">Электронная почта</label>
+            <input class="user-navigation__form-input" id="user-navigation__form-email" type="email" name="login">
+          </p>
+          <p class="user-navigation__form-item">
+            <label class="user-navigation__form-label" for="user-navigation__form-password">Пароль</label>
+            <input class="user-navigation__form-input" id="user-navigation__form-password" type="password" name="password">
+          </p>
+          <p class="user-navigation__form-info">
+            <a class="user-navigation__form-link" href="restore.html">Забыли пароль?</a>
+            <a class="user-navigation__form-link" href="registration.html">Новая регистрация</a>
+          </p>
+          <button class="button user-navigation__form-button" type="submit">Войти</button>
+        </form>
 
       </li>
       <li class="user-navigation__cart">
         <a class="user-navigation__link" href="cart.html">2 товара</a>
       </li>
     </ul>
-    <span class="main-header__search">Поиск</span>
+
+    <form class="main-header__search" action="https://echo.htmlacademy.ru" method="post">
+      <p class="main-header__search-item">
+        <label class="main-header__search-label" for="main-header__search-search">Что ищем?</label>
+        <input class="main-header__search-input" id="main-header__search-search" type="text" name="search">
+      </p>
+    </form>
+
     <p class="main-header__working-time">с 10 до 20, ежедневно
       <span class="main-header__phone">8 812 450-25-25</span></p>
   </header>

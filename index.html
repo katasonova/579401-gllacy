@@ -53,7 +53,7 @@
       <li class="user-navigation__login">
         <a class="user-navigation__link" href="login.html">Вход</a>
 
-          <form class="user-navigation__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="user-navigation__form-login" action="https://echo.htmlacademy.ru" method="post">
             <p class="user-navigation__form-item">
               <label class="user-navigation__form-label" for="user-navigation__form-email">Электронная почта</label>
               <input class="user-navigation__form-input" id="user-navigation__form-email" type="email" name="login">
@@ -75,16 +75,13 @@
       </li>
     </ul>
 
-    <!--Поиск-->
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="modal-search__item">
-          <label class="visually-hidden" for="modal-search__search">Что ищем?</label>
-          <input id="modal-search__search" type="text" name="search" placeholder="Что ищем?">
+      <form class="main-header__search" action="https://echo.htmlacademy.ru" method="post">
+        <p class="main-header__search-item">
+          <label class="main-header__search-label" for="main-header__search-search">Что ищем?</label>
+          <input class="main-header__search-input" id="main-header__search-search" type="text" name="search">
         </p>
       </form>
-    </section>
+
     <p class="main-header__working-time">с 10 до 20, ежедневно
       <span class="main-header__phone">8 812 450-25-25</span></p>
   </header>
