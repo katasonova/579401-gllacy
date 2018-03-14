@@ -7,15 +7,19 @@
 </head>
 
 <body>
+
   <header class="main-header">
-    <!--Выпадающее меню-->
+
+
     <nav class="main-navigation">
       <a class="main-navigation__logo">
         <img class="main-navigation__image" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Глейси»">
       </a>
+
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="catalog.html">Каталог</a>
+
           <ul class="inner-navigation">
             <li class="inner-navigation__item">
               <a class="inner-navigation__link" href="new.html"><b>Новинки</b></a>
@@ -33,6 +37,7 @@
               <a class="inner-navigation__link" href="melorin.html">Мелорин</a>
             </li>
           </ul>
+
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="services.html">Доставка и оплата</a>
@@ -41,30 +46,29 @@
           <a class="main-navigation__link" href="company.html">О Компании</a>
         </li>
       </ul>
+
     </nav>
+
     <ul class="user-navigation">
       <li class="user-navigation__login">
         <a class="user-navigation__link" href="login.html">Вход</a>
-        <!--Вход-->
-        <section class="modal modal-login">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="modal-login__item">
-              <label class="visually-hidden" for="modal-login__login">Электронная почта</label>
-              <input id="modal-login__login" type="email" name="login" placeholder="Электронная почта">
+
+          <form class="user-navigation__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="user-navigation__form-item">
+              <label class="user-navigation__form-label" for="user-navigation__form-email">Электронная почта</label>
+              <input class="user-navigation__form-input" id="user-navigation__form-email" type="email" name="login">
             </p>
-            <p class="modal-login__item">
-              <label class="visually-hidden" for="modal-login__password">Пароль</label>
-              <input id="modal-login__password" type="password" name="password" placeholder="Пароль">
+            <p class="user-navigation__form-item">
+              <label class="user-navigation__form-label" for="user-navigation__form-password">Пароль</label>
+              <input class="user-navigation__form-input" id="user-navigation__form-password" type="password" name="password">
             </p>
-            <p class="modal-login__info">
-              <a class="modal-login__restore" href="restore.html">Забыли пароль?</a>
-              <a class="modal-login__registration" href="registration.html">Новая регистрация</a>
+            <p class="user-navigation__form-info">
+              <a class="user-navigation__form-link" href="restore.html">Забыли пароль?</a>
+              <a class="user-navigation__form-link" href="registration.html">Новая регистрация</a>
             </p>
-            <!--<a href="#">Отправить</a> Сначало было размечено ссылкой-->
-            <button class="button modal-login__button" type="submit">Войти</button>
+            <button class="button user-navigation__form-button" type="submit">Войти</button>
           </form>
-        </section>
+
       </li>
       <li class="user-navigation__cart">
         <a class="user-navigation__link" href="cart.html">Пусто</a>
