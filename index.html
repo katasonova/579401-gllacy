@@ -74,12 +74,12 @@
       </li>
     </ul>
 
-      <form class="main-header__search" action="https://echo.htmlacademy.ru" method="post">
-        <p class="main-header__search-item">
-          <label class="main-header__search-label" for="main-header__search-search">Что ищем?</label>
-          <input class="main-header__search-input" id="main-header__search-search" type="text" name="search">
-        </p>
-      </form>
+    <form class="main-header__search" action="https://echo.htmlacademy.ru" method="post">
+      <p class="main-header__search-item">
+        <label class="main-header__search-label" for="main-header__search-search">Что ищем?</label>
+        <input class="main-header__search-input" id="main-header__search-search" type="text" name="search">
+      </p>
+    </form>
 
     <p class="main-header__working-time">с 10 до 20, ежедневно
       <span class="main-header__phone">8 812 450-25-25</span></p>
@@ -110,6 +110,7 @@
 
     <section class="special-offer">
       <h2 class="visually-hidden">Специальное предложение</h2>
+
       <ul class="special-offer__promo">
         <li class="special-offer__item">
           <h3 class="special-offer__heading">Малинка даром!</h3>
@@ -126,52 +127,53 @@
       </ul>
     </section>
 
-    <section class="bestsellers">
+    <section class="catalog">
       <h2 class="visually-hidden">Хиты продаж</h2>
-      <ul class="bestsellers__catalog">
-        <li class="bestsellers__item">
-          <article class="product">
-            <a class="product__link" href="orange_jam.html">
-              <h3 class="product__heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <img class="product__image" src="img/product-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-              <p class="product__price">
-                310 ₽<span class="product__weight">/кг</span>
+
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__link" href="orange_jam.html">
+            <article class="catalog__product">
+              <h3 class="catalog__heading">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <img class="catalog__image" src="img/product-1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+              <p class="catalog__price">
+                310 <span class="catalog__cost">руб.</span><span class="catalog__weight">/кг</span>
               </p>
-            </a>
-          </article>
+            </article>
+          </a>
         </li>
-        <li class="bestsellers__item">
-          <article class="product">
-            <a href="coffee_cream.html">
-              <h3 class="product__heading">Сливочно-кофейное с кусочками шоколада</h3>
-              <img class="product__image" src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-              <p class="product__price">
-                380 ₽<span class="product__weight">/кг</span>
-              </p>
-            </a>
+        <li class="catalog__item">
+          <a class="catalog__link" href="coffee_cream.html">
+           <article class="catalog__product">
+            <h3 class="catalog__heading">Сливочно-кофейное с кусочками шоколада</h3>
+            <img class="catalog__image" src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+            <p class="catalog__price">
+              380 <span class="catalog__cost">руб.</span><span class="catalog__weight">/кг</span>
+            </p>
           </article>
+          </a>
         </li>
-        <li class="bestsellers__item">
-          <article class="product">
-            <a class="product__link" href="strawberry_cream.html">
-              <h3 class="product__heading">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <img class="product__image" src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-              <p class="product__price">
-                355 ₽<span class="product__weight">/кг</span>
-              </p>
-            </a>
+        <li class="catalog__item">
+         <a class="catalog__link" href="strawberry_cream.html">
+          <article class="catalog__product">
+            <h3 class="catalog__heading">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <img class="catalog__image" src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+            <p class="catalog__price">
+              355 <span class="catalog__cost">руб.</span><span class="catalog__weight">/кг</span>
+            </p>
           </article>
+          </a>
         </li>
-        <li class="bestsellers__item">
-          <article class="product">
-            <a class="product__link" href="cream_creme_brulee.html">
-              <h3 class="product__heading">Сливочное крем-брюле с карамельной подливкой</h3>
-              <img class="product__image" src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле мороженое с карамельной подливкой">
-              <p class="product__price">
-                415 ₽<span class="product__weight">/кг</span>
-              </p>
-            </a>
+        <li class="catalog__item">
+        <a class="catalog__link" href="cream_caramel.html">
+         <article class="catalog__product">
+            <h3 class="catalog__heading">Сливочное крем-брюле с карамельной подливкой</h3>
+            <img class="catalog__image" src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле мороженое с карамельной подливкой">
+            <p class="catalog__price">
+              415 <span class="catalog__cost">руб.</span><span class="catalog__weight">/кг</span>
+            </p>
           </article>
+          </a>
         </li>
       </ul>
     </section>
