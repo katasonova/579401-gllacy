@@ -134,8 +134,8 @@
           <span class="filters__form-range">элемент формы-2</span>
         </p>
 
-        <fieldset class="filters__form-item">
-          <legend class="filters__form-label">Жирность:</legend>
+        <div class="filters__form-item" role="group" aria-labelledby="fat-data">
+          <div class="filters__form-label" id="fat-data">Жирность:</div>
 
           <ul class="filters__form-list">
             <li class="filters__form-option">
@@ -155,10 +155,10 @@
               <input class="visually-hidden filters__form-input filters__form-input-radio" id="filters__form-high" type="radio" name="fat-group" value="high">
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="filters__form-item">
-          <legend class="filters__form-label">Наполнители:</legend>
+        <div class="filters__form-item" role="group" aria-labelledby="fill-data">
+          <div class="filters__form-label" id="fill-data">Наполнители:</div>
 
           <ul class="filters__form-list">
             <li class="filters__form-option">
@@ -182,7 +182,7 @@
               <input class="visually-hidden filters__input filters__input-checkbox" id="filters__form-jams" type="checkbox" name="jams">
             </li>
           </ul>
-        </fieldset>
+        </div>
         <button class="button filters__button" type="submit">Применить</button>
       </form>
     </section>
