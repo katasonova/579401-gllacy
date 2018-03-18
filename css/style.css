@@ -327,6 +327,12 @@ a {
   font-weight: 700;
 }
 
+.page-main__heading {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
 .breadcrumbs {
   list-style: none;
 }
