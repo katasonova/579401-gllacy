@@ -16,12 +16,381 @@ a {
   color: #ffffff;
 }
 
-ul {
-  list-style: none;
+.button {
+  font: inherit;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+
+  background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+}
+
+/* Почему-то не работает градиент на ховере?*/
+
+.button:hover,
+.button:focus {
+  background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
 }
 
 .main-navigation {
   line-height: 18px;
 }
 
+.main-navigation__list,
+.inner-navigation,
+.user-navigation {
+  list-style: none;
+}
 
+
+.main-navigation__link {
+  text-decoration: underline;
+}
+
+.main-navigation__active {
+  text-decoration: none;
+
+  background-color: #d07058;
+}
+
+.user-navigation__login,
+.user-navigation__cart {
+  background: #9db1a5;
+}
+
+.user-navigation__form-login {
+  width: 277px;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-navigation__form-link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+
+  text-decoration: underline;
+}
+
+.main-navigation__link:hover,
+.main-navigation__link:focus,
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  color: #333333;
+
+  background: #f7f6f3;
+  text-decoration: none;
+}
+
+.main-header__search {
+  width: 340px;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.main-header__working-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.main-header__phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.slider-item__description {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slider-item__link {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.special-offer__promo {
+  list-style: none;
+}
+
+.special-offer__item {
+  width: 560px;
+}
+
+.special-offer__item:first-child {
+  background-color: #ac0933;
+  background-image: url(../img/raspberry_bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.special-offer__item:last-child {
+  background-color: #5b3622;
+  background-image: url(../img/shoko_bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.special-offer__heading {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-offer__description {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__heading {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+  text-decoration: underline;
+}
+
+.features {
+  background-color: #efe4cc;
+  background-image: url(../img/waffle_bg.jpg);
+  background-repeat: repeat-x;
+}
+
+.features__description {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.features__item-description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.blog {
+  color: #323232;
+
+  width: 560px;
+
+  background-color: #ffffff;
+  background-image: url(../img/strawberry_bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.blog__heading {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+  text-decoration: underline;
+}
+
+.blog__description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.subscription {
+  width: 550px;
+
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+  border: 5px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, transparent, transparent 10px, #92cdff 10px, #92cdff 20px, transparent 20px, transparent 30px, #fe9e90 30px, #fe9e90 40px);
+}
+
+.subscription__description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.contacts {
+  width: 302px;
+
+  color: #323232;
+
+  background-color: #fffffe;
+}
+
+.contacts__item {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contacts__address,
+.contacts__phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.footer-social__list {
+  list-style: none;
+}
+
+.footer-menu {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  list-style: none;
+  text-decoration: underline;
+}
+
+.footer-menu__item:first-child {
+  font-weight: 700;
+}
+
+.main-footer__copyright {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.main-footer__link {
+  text-decoration: underline;
+}
+
+.modal-feedback {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.modal-feedback {
+  width: 477px;
+}
+
+.modal-feedback__description {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.modal-feedback__form-input {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  background-color: #ffffff;
+}
+
+.modal-feedback__button-close {
+  border: none;
+}
+
+.user-cart {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-cart__cost {
+  color: #999999;
+}
+
+.user-cart__footer {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.breadcrumbs__link {
+  text-decoration: underline;
+}
+
+.breadcrumbs__active {
+  text-decoration: none;
+}
+
+.filters__form-item {
+  background-color: #a9b9af;
+}
+
+.filters__form-label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filters__form-list {
+  list-style: none;
+}
+
+.filters__form-select,
+.filters__form-range,
+.filters__form-option {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filters__button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #a6b7ae;
+  border: none;
+}
+
+.pagination {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  list-style: none;
+}
+
+.pagination__prev {
+  opacity: 0.2;
+}
+
+.pagination__active {
+  color: #323232;
+
+  background-color: #ffffff;
+}
