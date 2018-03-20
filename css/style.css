@@ -41,7 +41,8 @@ body {
 .main-navigation__link:hover,
 .main-navigation__link:focus,
 .user-navigation__link:hover,
-.user-navigation__link:focus {
+.user-navigation__link:focus,
+.user-navigation__link--active{
   color: #333333;
 
   background: #f7f6f3;
@@ -382,13 +383,15 @@ body {
   color: #999999;
 }
 
+.user-navigation__cart {
+  background-color: #f8f7f4;
+}
+
 .user-cart {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-
-  background-color: #f8f7f4;
 }
 
 .user-cart__cost {
@@ -405,27 +408,26 @@ body {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .breadcrumbs {
   list-style: none;
 }
 
-.breadcrumbs__item {
+.breadcrumbs__link {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  color: #ffffff;
 }
 
-.breadcrumbs__link {
-  text-decoration: underline;
-}
-
-.breadcrumbs__active {
+.breadcrumbs__link-active {
   text-decoration: none;
 }
 
-.filters__form-item {
+.filters__form-item,
+.filters__form-select{
   background-color: #a9b9af;
 }
 
@@ -433,6 +435,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .filters__form-list {
@@ -445,6 +448,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .filters__button {
@@ -454,15 +458,20 @@ body {
   color: #ffffff;
 
   background-color: #a6b7ae;
-  border: none;
+  border: 2px solid #fcfcfc;
 }
 
 .pagination {
+  list-style: none;
+}
+
+.pagination__link {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  color: #ffffff;
 
-  list-style: none;
+  text-decoration: none;
 }
 
 .pagination__prev {
