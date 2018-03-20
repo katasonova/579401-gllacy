@@ -135,6 +135,7 @@ body {
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -144,6 +145,8 @@ body {
   line-height: 44px;
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+
+  text-decoration: none;
 }
 
 .special-offer__promo {
