@@ -20,16 +20,10 @@ body {
   border: none;
 }
 
-/* Почему-то не работает градиент на ховере?*/
-
 .button:hover,
 .button:focus {
-  background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-}
-
-.main-navigation {
-  line-height: 18px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  box-shadow: 0px 2px 2px 0px #ac1000;
 }
 
 .main-navigation__list,
@@ -38,9 +32,21 @@ body {
   list-style: none;
 }
 
-
 .main-navigation__link {
-  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-navigation__link:hover,
+.main-navigation__link:focus,
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  color: #333333;
+
+  background: #f7f6f3;
+  text-decoration: none;
 }
 
 .main-navigation__active {
@@ -49,14 +55,55 @@ body {
   background-color: #d07058;
 }
 
+.inner-navigation__item {
+    background-color: #f8f7f4;
+}
+
+.inner-navigation__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+  text-decoration: none;
+}
+
+.inner-navigation__link:hover,
+.inner-navigation__link:focus {
+  background-color: #fbded7;
+}
+
+.inner-navigation__link:active {
+  background-color: #f6b5a5;
+}
+
+.inner-navigation__link-active {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.main-header__search {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
 .user-navigation__login,
 .user-navigation__cart {
   background: #9db1a5;
 }
 
-.user-navigation__form-login {
-  width: 277px;
+.user-navigation__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
 
+  text-decoration: none;
+}
+
+.user-navigation__form-login {
   color: #323232;
 
   background-color: #f8f7f4;
@@ -71,28 +118,11 @@ body {
   text-decoration: underline;
 }
 
-.main-navigation__link:hover,
-.main-navigation__link:focus,
-.user-navigation__link:hover,
-.user-navigation__link:focus {
-  color: #333333;
-
-  background: #f7f6f3;
-  text-decoration: none;
-}
-
-.main-header__search {
-  width: 340px;
-
-  color: #323232;
-
-  background-color: #f8f7f4;
-}
-
 .main-header__working-time {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .main-header__phone {
