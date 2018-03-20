@@ -316,26 +316,33 @@ body {
 }
 
 .footer-menu {
+  list-style: none;
+}
+
+.footer-menu__link {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-
-  list-style: none;
-  text-decoration: underline;
+  color: #ffffff;
 }
 
+/*первый элемент в списке должен быть жирным, не работает, не могу понять почему
 .footer-menu__item:first-child {
   font-weight: 700;
-}
+}*/
 
 .main-footer__copyright {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  color: #ffffff;
 }
 
 .main-footer__link {
-  text-decoration: underline;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .modal-feedback {
@@ -352,6 +359,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+  color: #323232;
 }
 
 .modal-feedback__form-input {
@@ -365,6 +373,13 @@ body {
 
 .modal-feedback__button-close {
   border: none;
+}
+
+.modal-feedback__form-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
 }
 
 .user-cart {
