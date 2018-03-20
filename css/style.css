@@ -247,8 +247,6 @@ body {
 }
 
 .blog {
-  color: #323232;
-
   width: 560px;
 
   background-color: #ffffff;
@@ -260,6 +258,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: #323232;
 
   text-decoration: underline;
 }
@@ -268,12 +267,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  color: #323232;
 }
 
 .subscription {
   width: 550px;
-
-  color: #5a5a5a;
 
   background-color: #f8f7f4;
   border: 5px solid transparent;
@@ -284,12 +282,11 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  color: #5a5a5a;
 }
 
 .contacts {
   width: 302px;
-
-  color: #323232;
 
   background-color: #fffffe;
 }
@@ -299,6 +296,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   font-style: normal;
+  color: #323232;
 }
 
 .contacts__address,
@@ -306,6 +304,11 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  color: #323232;
+}
+
+.feedback_button {
+  font-style: normal;
 }
 
 .footer-social__list {
