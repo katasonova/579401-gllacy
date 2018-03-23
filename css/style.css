@@ -251,6 +251,10 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
+.special-offer {
+  margin-bottom: 40px;
+}
+
 .special-offer__promo {
   display: flex;
   justify-content: space-between;
@@ -259,13 +263,13 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 
-  /* Временно для сетки*/
+  /* Временно для сетки
   min-height: 230px;
-  background-color: teal;
+  background-color: teal;*/
 }
 
 .special-offer__item {
-  width: 560px;
+  width: 540px;
 }
 
 .special-offer__item:first-child {
@@ -303,15 +307,35 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
+.catalog {
+  margin-bottom: 40px;
+}
+
 .catalog__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.catalog__item {
+  width: 267px;
 }
 
 .catalog__link {
   text-decoration: none;
 }
 
+.catalog__product {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog__heading {
+  order: 1;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -335,12 +359,17 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
+  padding: 27px 20px;
+  margin-bottom: 40px;
+
   background-color: #efe4cc;
   background-image: url(../img/waffle_bg.jpg);
-  background-repeat: repeat-x;
+  background-repeat: repeat;
 }
 
 .features__description {
+  margin: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -348,7 +377,17 @@ input[type="radio"].visually-hidden {
 }
 
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.features__item {
+  width: 540px;
 }
 
 .features__item-description {
@@ -356,6 +395,12 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   font-weight: 400;
   color: #323232;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .blog {
