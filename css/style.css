@@ -66,6 +66,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -234,6 +237,10 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
+.slider {
+  margin-top: -100px;
+}
+
 .slider-item__description {
   font-size: 60px;
   line-height: 60px;
@@ -253,6 +260,7 @@ input[type="radio"].visually-hidden {
 }
 
 .special-offer {
+  margin-top: -230px;
   margin-bottom: 40px;
 }
 
