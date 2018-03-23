@@ -252,7 +252,16 @@ input[type="radio"].visually-hidden {
 }
 
 .special-offer__promo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  /* Временно для сетки*/
+  min-height: 230px;
+  background-color: teal;
 }
 
 .special-offer__item {
