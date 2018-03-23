@@ -60,7 +60,8 @@ input[type="radio"].visually-hidden {
 .user-navigation__form-login,
 .modal,
 .user-cart,
-.user-cart__button{
+.user-cart__button,
+.contacts {
   display: none;
 }
 
@@ -468,11 +469,27 @@ input[type="radio"].visually-hidden {
   font-style: normal;
 }
 
+.main-footer {
+  display: flex;
+  padding: 27px;
+  padding-top: 17px;
+}
+
 .footer-social__list {
+  width: 186px;
+  margin: 0;
+  margin-right: 214px;
+  padding: 0;
+
   list-style: none;
 }
 
-.footer-menu {
+.footer-menu__list {
+  width: 330px;
+  margin: 0;
+  margin-right: 228px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -489,6 +506,9 @@ input[type="radio"].visually-hidden {
 }*/
 
 .main-footer__copyright {
+  width: 195px;
+  margin: 0;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
