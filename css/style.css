@@ -14,10 +14,11 @@ img {
   height: auto;
 }
 
+/* Временно для сетки
 .main-container {
   max-width: 1146px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 27px;*/
 }
 
 .button {
@@ -67,6 +68,9 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
   z-index: 1;
 
   display: flex;
@@ -238,7 +242,10 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  max-width: 1146px;
+  margin: 0 auto;
   margin-top: -100px;
+  padding: 0 27px;
 }
 
 .slider-item__description {
@@ -260,8 +267,11 @@ input[type="radio"].visually-hidden {
 }
 
 .special-offer {
+  max-width: 1146px;
+  margin: 0 auto;
   margin-top: -230px;
   margin-bottom: 40px;
+  padding: 0 27px;
 }
 
 .special-offer__promo {
@@ -317,7 +327,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
+  max-width: 1146px;
+  margin: 0 auto;
   margin-bottom: 40px;
+  padding: 0 27px;
 }
 
 .catalog__list {
@@ -368,8 +381,15 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
-  padding: 27px 20px;
+  max-width: 1146px;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  /*отступы для центровки, тут какая-то проблема с паддингами, запуталась
+  padding: 27px 47px;*/
+
+  /*отступы внутри блока
+  padding: 27px 20px;*/
 
   background-color: #efe4cc;
   background-image: url(../img/waffle_bg.jpg);
@@ -407,9 +427,13 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  max-width: 1146px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 27px;
+
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .blog {
@@ -451,6 +475,12 @@ input[type="radio"].visually-hidden {
   color: #5a5a5a;
 }
 
+.map-wapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .contacts {
   width: 302px;
 
@@ -478,9 +508,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  display: flex;
+  max-width: 1146px;
+  margin: 0 auto;
   padding: 27px;
   padding-top: 17px;
+
+  display: flex;
 }
 
 .footer-social__list {
