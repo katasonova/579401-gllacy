@@ -68,8 +68,7 @@ input[type="radio"].visually-hidden {
 .user-navigation__form-login,
 .modal,
 .user-cart,
-.user-cart__button,
-.contacts {
+.user-cart__button {
   display: none;
 }
 
@@ -215,6 +214,8 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   width: 32px;
   height: 32px;
+
+  cursor: pointer;
 }
 
 .main-header__search-wrapper::before {
@@ -234,7 +235,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__search-wrapper:hover::before,
-.main-header__search-wrapper:focus::before{
+.main-header__search-wrapper:focus::before {
   background-color: #f7f6f3;
   background-image: url("../img/search_hover.svg");
 }
@@ -521,7 +522,6 @@ input[type="radio"].visually-hidden {
 }
 
 .special-offer__link {
-  display: inline-block;
   box-sizing: border-box;
   padding: 12px 22px;
   margin-left: auto;
@@ -530,9 +530,6 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-
-  text-decoration: none;
-  text-align: right;
 }
 
 .catalog {
@@ -571,8 +568,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.button.catalog__link:hover,
-.button.catalog__link:focus {
+.catalog__link:hover,
+.catalog__link:focus {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   box-shadow: 0px 2px 2px 0px #ac1000;
 }
@@ -811,33 +808,91 @@ input[type="radio"].visually-hidden {
 }
 
 .subscription {
-  width: 550px;
+  width: 560px;
+  padding: 5px;
+  box-sizing: border-box;
+
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*border: 5px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, transparent, transparent 10px, #92cdff 10px, #92cdff 20px, transparent 20px, transparent 30px, #fe9e90 30px, #fe9e90 40px);
+  border-radius: 15px;*/
+}
+
+.subscription-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 29px 21px 21px 21px;
 
   background-color: #f8f7f4;
-  border: 5px solid transparent;
-  border-image: 10 repeating-linear-gradient(135deg, transparent, transparent 10px, #92cdff 10px, #92cdff 20px, transparent 20px, transparent 30px, #fe9e90 30px, #fe9e90 40px);
   border-radius: 15px;
 }
 
 .subscription__description {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 36px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
 }
 
+.subscription__item,
+.subscription__form {
+  margin: 0;
+}
+
+.subscription__form {
+  width: 368px;
+}
+
+.subscription__item-input {
+  box-sizing: border-box;
+  width: 368px;
+  padding: 12px 14px 12px 14px;
+  font: inherit;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.button-subscription {
+  width: 130px;
+  padding: 10px 18px;
+  margin-left: auto;
+}
+
 .map-wapper {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
 }
 
 .contacts {
+  position: absolute;
+  top: 62px;
+  right: 28px;
+
+  display: flex;
+  flex-direction: column;
+
   width: 302px;
+  padding: 28px 26px 32px 26px;
+  box-sizing: border-box;
 
   background-color: #fffffe;
+  border-radius: 15px;
 }
 
-.contacts__item {
+.contacts__item,
+.contacts__working-time {
+  width: 200px;
+  margin: 0;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -845,15 +900,41 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.contacts__address,
-.contacts__phone {
+.contacts__address {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  font-style: normal;
   color: #323232;
 }
 
+.contacts__phone {
+  margin: 0;
+  margin-top: 7px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: #323232;
+}
+
+.contacts__working-time {
+  margin-bottom: 25px;
+}
+
+.contacts__address {
+  margin-bottom: 19px;
+}
+
 .feedback_button {
+  padding: 10px 26px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -876,6 +957,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   width: 330px;
   margin: 0;
   margin-right: 228px;
@@ -889,6 +974,10 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.footer-menu__link::before {
+  content: "";
 }
 
 /*первый элемент в списке должен быть жирным, не работает, не могу понять почему

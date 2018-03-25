@@ -212,17 +212,19 @@
       </article>
 
       <section class="subscription">
-        <h2 class="visually-hidden">Подписаться на рассылку</h2>
-        <p class="subscription__description">
-          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Форма подписки-->
-        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="subscription__item">
-            <label class="visually-hidden" for="subscription__email">Электронная почта</label>
-            <input id="subscription__email" type="email" name="email">
-          </p>
-        </form>
-        <button class="button button-subscription" type="submit">Отправить</button>
+        <div class="subscription-wrapper">
+          <h2 class="visually-hidden">Подписаться на рассылку</h2>
+          <p class="subscription__description">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <!--Форма подписки-->
+          <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="subscription__item">
+              <label class="visually-hidden" for="subscription__email">Электронная почта</label>
+              <input class="subscription__item-input" id="subscription__email" type="email" name="email">
+            </p>
+          </form>
+          <button class="button button-subscription" type="submit">Отправить</button>
+        </div>
       </section>
     </div>
 
@@ -231,13 +233,13 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img class="map__image" src="img/map2.jpg" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <address class="contacts">
-        <p class="contacts__item">Адрес главного офиса и офлайн-магазина:
-          <span class="contacts__address">
-          ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-        <p class="contacts__item">Для закаазов по телефону:
-          <span class="contacts__phone">8 812 450-25-25</span>
-          <span class="contacts__working-time">(с 10 до 20 ежедневно)</span></p>
-        <a class="button feedback_button">Форма обратной связи</a>
+          <p class="contacts__item">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="contacts__address">
+          ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="contacts__item">Для закаазов по телефону:
+          <p class="contacts__phone">8 812 450-25-25</p>
+          <p class="contacts__working-time">(с 10 до 20 ежедневно)</p>
+          <a class="button feedback_button">Форма обратной связи</a>
       </address>
       </div>
     </section>
@@ -246,16 +248,16 @@
   <footer class="main-footer">
     <ul class="footer-social__list">
       <li class="footer-social__item">
-        <a class="footer-social__link" href="https://twitter.com">Твиттер</a>
+        <a class="visually-hidden footer-social__link" href="https://twitter.com">Твиттер</a>
       </li>
       <li class="footer-social__item">
-        <a class="footer-social__link" href="https://www.instagram.com">Инстаграмм</a>
+        <a class="visually-hidden footer-social__link" href="https://www.instagram.com">Инстаграмм</a>
       </li>
       <li class="footer-social__item">
-        <a class="footer-social__link" href="https://www.facebook.com">Фейсбук</a>
+        <a class="visually-hidden footer-social__link" href="https://www.facebook.com">Фейсбук</a>
       </li>
       <li class="footer-social__item">
-        <a class="footer-social__link" href="https://vk.com">Вконтакте</a>
+        <a class="visually-hidden footer-social__link" href="https://vk.com">Вконтакте</a>
       </li>
     </ul>
 
