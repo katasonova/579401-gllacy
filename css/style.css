@@ -623,17 +623,25 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.catalog__cost::before {
+.catalog__price::before {
   content: "";
 
+  position: absolute;
+  top: 6px;
+  left: 80px;
+
+  display: block;
   width: 26px;
   height: 31px;
 
-  background-image:url(../img/ruble.svg);
-  background-color: red;
+  background-image: url("../img/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog__weight {
+  padding-left: 23px;
+
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
@@ -641,6 +649,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
+
   max-width: 1146px;
   margin: 0 auto;
   margin-bottom: 40px;
