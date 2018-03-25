@@ -14,29 +14,6 @@ img {
   height: auto;
 }
 
-/* Временно для сетки
-.main-container {
-  max-width: 1px;
-  margin: 0 auto;
-  padding: 0 27px;*/
-}
-
-.button {
-  color: #ffffff;
-
-  text-align: center;
-
-  background-image: linear-gradient( to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  border: none;
-}
-
-.button:hover,
-.button:focus {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px #ac1000;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -55,7 +32,40 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 /* Временно для сетки */
+
 .inner-navigation,
 .main-header__search,
 .user-navigation__form-login,
@@ -75,8 +85,8 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  padding-top: 5px;
+  align-items: center;
+  padding-top: 10px;
 
   /* Временно для сетки
   min-height: 110px;
@@ -95,6 +105,7 @@ input[type="radio"].visually-hidden {
 .main-navigation__logo {
   width: 154px;
   height: 64px;
+  margin-right: 10px;
 }
 
 .main-navigation__list,
@@ -107,6 +118,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 380px;
 
   /* Временно для сетки
@@ -115,31 +129,65 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation__link {
+  position: relative;
+
+  display: block;
+  padding: 7px 14px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+
+  text-decoration: none;
 }
 
 .main-navigation__link:hover,
 .main-navigation__link:focus,
 .user-navigation__link:hover,
 .user-navigation__link:focus,
-.user-navigation__link--active{
+.user-navigation__link--active {
   color: #333333;
 
   background: #f7f6f3;
   text-decoration: none;
+  border-radius: 20px;
 }
+
+.main-navigation__link:active {
+  box-shadow: inset 0 2px 1px 0 #696969;
+}
+
 
 .main-navigation__active {
-  text-decoration: none;
-
   background-color: #d07058;
+  border-radius: 20px;
 }
 
+/* подчеркивания для пунктов меню
+.main-navigation__link::after {
+  position: absolute;
+
+  content: "";
+
+  top: 25px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  margin-left: 15px;
+
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+.main-navigation__link:hover::after,
+.main-navigation__link:focus::after,
+.main-navigation__active:hover::after,
+.main-navigation__active:focus::after{
+  opacity: 0;
+}*/
+
 .inner-navigation__item {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
 }
 
 .inner-navigation__link {
@@ -167,12 +215,31 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__search-wrapper {
-  width: 40px;
   margin-left: auto;
+  width: 32px;
+  height: 32px;
+}
 
-  /* Временно для сетки
-  min-height: 32px;
-  background-color: blue;*/
+.main-header__search-wrapper::before {
+  content: "";
+
+  display: block;
+
+  width: 17px;
+  height: 17px;
+  padding: 7px;
+
+  background-color: #a1b6aa;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.main-header__search-wrapper:hover::before,
+.main-header__search-wrapper:focus::before{
+  background-color: #f7f6f3;
+  background-image: url("../img/search_hover.svg");
 }
 
 .main-header__search {
@@ -183,25 +250,59 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
   display: flex;
-  width: 230px;
+  justify-content: flex-end;
+  width: 22s0px;
 
   /* Временно для сетки
   min-height: 32px;
   background-color: chartreuse;*/
 }
 
-.user-navigation__login,
-.user-navigation__cart {
-  background: #9db1a5;
+.user-navigation__item {
+  margin-left: 10px;
 }
 
-.user-navigation__link {
+.user-navigation__login,
+.user-navigation__cart {
+  background-color: #a1b4a9;
+  border-radius: 20px;
+}
+
+.user-navigation__login-link {
+  position: relative;
+
+  display: block;
+  padding: 7px 15px 7px 45px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
 
   text-decoration: none;
+}
+
+.user-navigation__login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 16px;
+
+  width: 20px;
+  height: 20px;
+
+  display: block;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation__login-link:hover::before,
+.user-navigation__login-link:focus::before {
+  background-color: #f7f6f3;
+  background-image: url("../img/login_hover.svg");
 }
 
 .user-navigation__form-login {
@@ -218,6 +319,73 @@ input[type="radio"].visually-hidden {
 
   text-decoration: underline;
 }
+
+.user-navigation__cart-link {
+  position: relative;
+
+  display: block;
+  padding: 7px 32px 7px 45px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.user-navigation__cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 16px;
+
+  width: 21px;
+  height: 20px;
+
+  display: block;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation__cart-link:hover::before,
+.user-navigation__cart-link:focus::before {
+  background-color: #f7f6f3;
+  background-image: url("../img/cart_hover.svg");
+}
+
+.user-navigation__login-link:hover,
+.main-navigation__link:focus,
+.user-navigation__cart-link:hover,
+.user-navigation__link:focus,
+.user-navigation__link--active {
+  color: #333333;
+
+  background: #f7f6f3;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.user-cart {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.user-cart__cost {
+  color: #999999;
+}
+
+.user-cart__footer {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
 
 .main-header__working-time {
   align-self: flex-end;
@@ -236,6 +404,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__phone {
+  display: block;
+
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -244,7 +414,7 @@ input[type="radio"].visually-hidden {
 .slider {
   max-width: 1146px;
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: -115px;
   padding: 0 27px;
 }
 
@@ -356,7 +526,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button.catalog__link {
@@ -415,10 +585,8 @@ input[type="radio"].visually-hidden {
 
   /*отступы для центровки, тут какая-то проблема с паддингами, запуталась
   padding: 27px 47px;*/
-
   /*отступы внутри блока
   padding: 27px 20px;*/
-
   background-color: #efe4cc;
   background-image: url(../img/waffle_bg.jpg);
   background-repeat: repeat;
@@ -505,7 +673,6 @@ input[type="radio"].visually-hidden {
 
 .map-wapper {
   width: 1200px;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -628,27 +795,6 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.user-navigation__cart {
-  background-color: #f8f7f4;
-}
-
-.user-cart {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-}
-
-.user-cart__cost {
-  color: #999999;
-}
-
-.user-cart__footer {
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
 .breadcrumbs {
   max-width: 1146px;
   margin: 0 auto;
@@ -695,7 +841,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters__form-item,
-.filters__form-select{
+.filters__form-select {
   background-color: #a9b9af;
 }
 
