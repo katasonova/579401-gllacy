@@ -631,7 +631,7 @@ input[type="radio"].visually-hidden {
   left: 80px;
 
   display: block;
-  width: 26px;
+  width: 28px;
   height: 31px;
 
   background-image: url("../img/ruble.svg");
@@ -773,14 +773,24 @@ input[type="radio"].visually-hidden {
 }
 
 .blog {
+  display: flex;
+  flex-direction: column;
+
   width: 560px;
+  min-height: 220px;
+  padding: 23px 20px 21px 20px;
+  box-sizing: border-box;
 
   background-color: #ffffff;
   background-image: url(../img/strawberry_bg.jpg);
   background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .blog__heading {
+  margin: 0;
+  max-width: 285px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -790,6 +800,10 @@ input[type="radio"].visually-hidden {
 }
 
 .blog__description {
+  margin: 0;
+  margin-bottom: 5px;
+  order: -1;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -802,6 +816,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
   border: 5px solid transparent;
   border-image: 10 repeating-linear-gradient(135deg, transparent, transparent 10px, #92cdff 10px, #92cdff 20px, transparent 20px, transparent 30px, #fe9e90 30px, #fe9e90 40px);
+  border-radius: 15px;
 }
 
 .subscription__description {
