@@ -552,7 +552,7 @@ input[type="radio"].visually-hidden {
 
 .catalog__item {
   width: 267px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   margin-right: 26px;
 }
 
@@ -649,22 +649,22 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
+  box-sizing: border-box;
 
   max-width: 1146px;
   margin: 0 auto;
   margin-bottom: 40px;
+  padding: 24px 20px 2px 20px;
 
-  /*отступы для центровки, тут какая-то проблема с паддингами, запуталась
-  padding: 27px 47px;*/
-  /*отступы внутри блока
-  padding: 27px 20px;*/
   background-color: #efe4cc;
   background-image: url(../img/waffle_bg.jpg);
   background-repeat: repeat;
+  border-radius: 15px;
 }
 
 .features__description {
   margin: 0;
+  margin-bottom: 21px;
 
   font-size: 24px;
   line-height: 30px;
@@ -676,6 +676,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: stretch;
   margin: 0;
   padding: 0;
 
@@ -683,10 +684,78 @@ input[type="radio"].visually-hidden {
 }
 
 .features__item {
+  position: relative;
+
+  box-sizing: border-box;
+  margin-bottom: 22px;
+
   width: 540px;
+  padding-left: 57px;
+}
+
+.features__item:first-child::before {
+  content: "";
+
+  position: absolute;
+  top: -13px;
+  left: 0px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item:nth-child(2)::before {
+  content: "";
+
+  position: absolute;
+  top: -13px;
+  left: 0px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item:nth-child(3)::before {
+  content: "";
+
+  position: absolute;
+  top: -13px;
+  left: 0px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item:last-child::before {
+  content: "";
+
+  position: absolute;
+  top: -13px;
+  left: 0px;
+
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features__item-description {
+  margin: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
