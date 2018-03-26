@@ -1199,13 +1199,41 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
+.inner-main {
+  position: relative;
+}
+
 .breadcrumbs {
+  position: absolute;
+  top: -42px;
+  left: 120px;
+
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 6;
+
   max-width: 1146px;
   margin: 0 auto;
   margin-top: 25px;
   padding: 0 27px;
 
   list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  padding-right: 21px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "»";
+
+  position: absolute;
+  top: 1px;
+  left: 60px;
+
+  color: #ffffff;
 }
 
 .breadcrumbs__link {
@@ -1222,7 +1250,7 @@ input[type="radio"].visually-hidden {
 .inner-main__heading {
   max-width: 1146px;
   margin: 0 auto;
-  padding: 10px 27px;
+  padding: 6px 27px;
 
   font-size: 35px;
   line-height: 41px;
