@@ -82,7 +82,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 10px;
 
   /* Временно для сетки
   min-height: 110px;
@@ -102,6 +101,7 @@ input[type="radio"].visually-hidden {
   width: 154px;
   height: 64px;
   margin-right: 10px;
+  padding-top: 10px;
 }
 
 .main-navigation__list,
@@ -117,7 +117,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   width: 380px;
+  padding-top: 3px;
 
   /* Временно для сетки
   min-height: 17px;
@@ -134,8 +136,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-
-  text-decoration: none;
 }
 
 .main-navigation__link:hover,
@@ -214,6 +214,7 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   width: 32px;
   height: 32px;
+  padding-top: 3px;
 
   cursor: pointer;
 }
@@ -249,11 +250,13 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   justify-content: flex-end;
-  width: 22s0px;
+
+  padding-top: 3px;
 
   /* Временно для сетки
   min-height: 32px;
-  background-color: chartreuse;*/
+  background-color: chartreuse;
+  width: 220px;*/
 }
 
 .user-navigation__item {
@@ -568,12 +571,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.catalog__link:hover,
-.catalog__link:focus {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-  box-shadow: 0px 2px 2px 0px #ac1000;
-}
-
 .catalog__product {
   position: relative;
 
@@ -861,8 +858,9 @@ input[type="radio"].visually-hidden {
 
 .button-subscription {
   width: 130px;
-  padding: 10px 18px;
+  padding: 12px 18px;
   margin-left: auto;
+  margin-bottom: 16px;
 }
 
 .map-wapper {
@@ -930,7 +928,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback_button {
-  padding: 10px 26px;
+  padding: 10px 15px;
 
   font-size: 18px;
   line-height: 24px;
@@ -948,25 +946,173 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social__list {
-  width: 186px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+  width: 250px;
   margin: 0;
-  margin-right: 214px;
+  margin-right: 150px;
   padding: 0;
+  padding-top: 14px;
 
   list-style: none;
 }
 
+.footer-social__item {
+  position: relative;
+
+  margin-right: 11px;
+  margin-bottom: 11px;
+}
+
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: #849d8f;
+  border: 3px solid #c2cec7;
+  border-radius: 50%
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+    border-color: #dae2de;
+}
+
+.footer-social__link-tw::before {
+  content: "";
+
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-social__link-tw:hover::before,
+.footer-social__link-tw:focus::before {
+  background-image: url("../img/twitter_hover.svg");
+}
+
+.footer-social__link-tw:active::before {
+  background-image: url("../img/twitter_active.svg");
+}
+
+.footer-social__link-insta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-social__link-insta:hover::before,
+.footer-social__link-insta:focus::before {
+  background-image: url("../img/instagram_hover.svg");
+}
+
+.footer-social__link-insta:active::before {
+  background-image: url("../img/instagram_active.svg");
+}
+
+.footer-social__link-fb::before {
+  content: "";
+
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  background-image: url("../img/fb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-social__link-fb:hover::before,
+.footer-social__link-fb:focus::before {
+  background-image: url("../img/fb_hover.svg");
+}
+
+.footer-social__link-fb:active::before {
+  background-image: url("../img/fb_active.svg");
+}
+
+.footer-social__link-vk::before {
+  content: "";
+
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: transparent;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-social__link-vk:hover::before,
+.footer-social__link-vk:focus::before {
+  background-image: url("../img/vk_hover.svg");
+}
+
+.footer-social__link-vk:active::before {
+  background-image: url("../img/vk_active.svg");
+}
+
 .footer-menu__list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 
-  width: 330px;
+  width: 350px;
   margin: 0;
-  margin-right: 228px;
+  margin-right: 160px;
   padding: 0;
+  padding-top: 12px;
+  padding-left: 31px;
 
   list-style: none;
+}
+
+.footer-menu__item {
+  margin-right: 30px;
+}
+
+.footer-menu__item:nth-child(3) {
+  margin-right: 45px;
+}
+
+.footer-menu__item:first-child::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 9px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-menu__link {
@@ -976,23 +1122,37 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.footer-menu__link::before {
-  content: "";
+.footer-menu__link-special {
+  font-weight: 700;
 }
 
-/*первый элемент в списке должен быть жирным, не работает, не могу понять почему
-.footer-menu__item:first-child {
-  font-weight: 700;
-}*/
-
 .main-footer__copyright {
+  position: relative;
+
   width: 195px;
   margin: 0;
+  padding-top: 39px;
+  padding-left: 10px;
 
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.main-footer__copyright::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: 17px;
+
+  width: 108px;
+  height: 39px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-footer__link {
