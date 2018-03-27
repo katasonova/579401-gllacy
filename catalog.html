@@ -129,11 +129,24 @@
           </select>
         </p>
 
-        <p class="filters__form-item">
+        <!--<p class="filters__form-item">
           <span class="filters__form-label">Цена: 100 руб. – 500 руб.</span>
           <span class="filters__form-range">элемент формы-1</span>
           <span class="filters__form-range">элемент формы-2</span>
-        </p>
+        </p>-->
+
+        <div class="filters__form-item" role="group" aria-labelledby="cost-data">
+          <div class="filters__form-label" id="cost-data">Цена: 100 руб. – 500 руб.</div>
+          <div class="filters__form-range">
+            <div class="filters__form-range-scale">
+              <div class="filters__form-range-bar"></div>
+            </div>
+            <div class="filters__form-range-toggle toggle-min"></div>
+            <div class="filters__form-range-toggle toggle-max"></div>
+          </div>
+
+        </div>
+
 
         <div class="filters__form-item" role="group" aria-labelledby="fat-data">
           <div class="filters__form-label" id="fat-data">Жирность:</div>
@@ -162,23 +175,23 @@
           <div class="filters__form-label" id="fill-data">Наполнители:</div>
 
           <ul class="filters__form-list">
-            <li class="filters__form-option">
+            <li class="filters__form-list-option">
               <label class="filters__form-input-label" for="filters__form-chocolate">шоколадные</label>
               <input class="visually-hidden filters__form-input filters__form-input-checkbox" id="filters__form-chocolate" type="checkbox" name="chocolate" checked>
             </li>
-            <li class="filters__form-option">
+            <li class="filters__form-list-option">
               <label class="filters__form-input-label" for="filters__form-sugar">сахарные присыпки</label>
               <input class="visually-hidden filters__input filters__input-checkbox" id="filters__form-sugar" type="checkbox" name="sugar" checked>
             </li>
-            <li class="filters__form-option">
+            <li class="filters__form-list-option">
               <label class="filters__form-input-label" for="filters__form-fruit">фрукты</label>
               <input class="visually-hidden filters__input filters__input-checkbox" id="filters__form-fruit" type="checkbox" name="fruit">
             </li>
-            <li class="filters__form-option">
+            <li class="filters__form-list-option">
               <label class="filters__form-input-label" for="filters__form-syrups">сиропы</label>
               <input class="visually-hidden filters__input filters__input-checkbox" id="filters__form-syrups" type="checkbox" name="syrups">
             </li>
-            <li class="filters__form-option">
+            <li class="filters__form-list-option">
               <label class="filters__form-input-label" for="filters__form-jams">джемы</label>
               <input class="visually-hidden filters__input filters__input-checkbox" id="filters__form-jams" type="checkbox" name="jams">
             </li>

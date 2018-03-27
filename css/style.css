@@ -551,6 +551,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 267px;
   margin-bottom: 39px;
   margin-right: 26px;
@@ -561,10 +565,13 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__link {
-  text-decoration: none;
-}
+  display: none;
 
-.catalog__link {
+  align-self: center;
+
+  margin-top: 11px;
+  padding: 10px 17px;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1083,16 +1090,17 @@ input[type="radio"].visually-hidden {
 
   width: 350px;
   margin: 0;
-  margin-right: 160px;
+  margin-right: 150px;
   padding: 0;
   padding-top: 12px;
-  padding-left: 31px;
+  padding-left: 26px;
 
   list-style: none;
 }
 
 .footer-menu__item {
   margin-right: 30px;
+  margin-top: -3px;
 }
 
 .footer-menu__item:nth-child(3) {
@@ -1104,7 +1112,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 15px;
-  left: 9px;
+  left: 5px;
 
   width: 15px;
   height: 15px;
@@ -1122,6 +1130,15 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.footer-menu__link:hover,
+.footer-menu__link:focus,
+.footer-menu__link:active,
+.main-footer__link:hover,
+.main-footer__link:focus,
+.main-footer__link:active {
+  color: #ffbc9e;
+}
+
 .footer-menu__link-special {
   font-weight: 700;
 }
@@ -1132,7 +1149,7 @@ input[type="radio"].visually-hidden {
   width: 195px;
   margin: 0;
   padding-top: 39px;
-  padding-left: 10px;
+  padding-left: 40px;
 
   font-size: 12px;
   line-height: 18px;
@@ -1145,7 +1162,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: -3px;
-  left: 17px;
+  left: 43px;
 
   width: 108px;
   height: 39px;
@@ -1199,14 +1216,8 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.inner-main {
-  position: relative;
-}
-
 .breadcrumbs {
-  position: absolute;
-  top: -42px;
-  left: 120px;
+  position: relative;
 
   display: flex;
   flex-wrap: wrap;
@@ -1214,7 +1225,7 @@ input[type="radio"].visually-hidden {
 
   max-width: 1146px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: -16px;
   padding: 0 27px;
 
   list-style: none;
@@ -1243,6 +1254,12 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.breadcrumbs__link:not(.breadcrumbs__link-active):hover,
+.breadcrumbs__link:not(.breadcrumbs__link-active):focus,
+.breadcrumbs__link:not(.breadcrumbs__link-active):active {
+  color: #ffbc9e;
+}
+
 .breadcrumbs__link-active {
   text-decoration: none;
 }
@@ -1250,7 +1267,8 @@ input[type="radio"].visually-hidden {
 .inner-main__heading {
   max-width: 1146px;
   margin: 0 auto;
-  padding: 6px 27px;
+  margin-bottom: 21px;
+  padding: 3px 27px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1261,48 +1279,178 @@ input[type="radio"].visually-hidden {
 .filters {
   max-width: 1146px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   padding: 0 27px;
 }
 
 .filters__form {
-  width: 880px;
-
   display: flex;
   flex-wrap: wrap;
+
+  width: 910px;
 }
 
-.filters__form-item,
-.filters__form-select {
-  background-color: #a9b9af;
+.filters__form-item {
+  margin-right: 15px;
+  margin-bottom: 14px;
+}
+
+.filters__form-item:first-child {
+  width: 193px;
+  margin: 0;
+  margin-bottom: 14px;
+  margin-right: 15px;
+}
+
+.filters__form-item:nth-child(2) {
+  width: 220px;
+  margin-bottom: 14px;
 }
 
 .filters__form-label {
+  padding-left: 16px;
+  margin-bottom: 8px;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
 }
 
-.filters__form-list {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-
-  list-style: none;
-}
-
 .filters__form-select,
 .filters__form-range,
+.filters__form-list,
 .filters__form-option {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+
+  background-color: #a9b9af;
+}
+
+.filters__form-select{
+  margin: 0;
+  margin-top: 13px;
+  padding: 9px 20px 9px 16px;
+
+  border: none;
+  border-radius: 50px;
+}
+
+.filters__form-range {
+  position: relative;
+
+  height: 21px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+  background-color: #abbcb2;
+
+  border-radius: 50px;
+}
+
+.filters__form-range-scale {
+  height: 5px;
+
+  background-color: #d1dad3;
+}
+
+.filters__form-range-bar {
+  width: 58%;
+  height: 5px;
+  margin-left: 13%;
+
+  background-color: #f8f7f4;
+}
+
+.filters__form-range-toggle {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+}
+
+.toggle-min {
+  left: 35px;
+}
+
+.toggle-max {
+  left: 133px;
+}
+
+.filters__form-list {
+  position: relative;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  padding: 9px 17px 9px 45px;
+
+  display: flex;
+
+  list-style: none;
+  border-radius: 50px;
+}
+
+.filters__form-list:first-child {
+  height: 21px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+  background-color: #abbcb2;
+}
+
+.filters__form-option {
+  padding-right: 49px;
+}
+
+.filters__form-option:last-child {
+  padding-right: 0;
+}
+
+.filters__form-option::before {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 12px;
+
+  width: 26px;
+  height: 26px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filters__form-list-option {
+  padding-right: 54px;
+}
+
+.filters__form-list-option:last-child {
+  padding-right: 0;
 }
 
 .filters__button {
+  align-self: center;
+
+  box-sizing: border-box;
+  padding: 7px 27px;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1310,9 +1458,26 @@ input[type="radio"].visually-hidden {
 
   background-color: #a6b7ae;
   border: 2px solid #fcfcfc;
+  border-radius: 50px;
+
+  cursor: pointer;
 }
 
+.filters__button:hover,
+.filters__button:focus {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+/* кнопка прыгает из-за бордер
+.filters__button:active {
+  box-shadow: inset 0 2px 1px 0 #696969;
+  border: none;
+}*/
+
 .pagination {
+  display: flex;
+  justify-content: flex-end;
   max-width: 1146px;
   margin: 0 auto;
   margin-top: 40px;
