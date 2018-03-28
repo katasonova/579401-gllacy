@@ -1562,3 +1562,17 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.inner-main::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+
+  width: 1146px;
+  height: 1px;
+
+  transform: translateX(-50%);
+
+  background-color: #a9bbb1;
+}
+
