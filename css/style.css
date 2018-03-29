@@ -64,7 +64,6 @@ input[type="radio"].visually-hidden {
 /* Временно для сетки */
 
 .main-header__search,
-.user-navigation__form-login,
 .modal,
 .user-cart,
 .user-cart__button {
@@ -127,13 +126,18 @@ input[type="radio"].visually-hidden {
   background-color: teal;*/
 }
 
+.main-navigation__item {
+  position: relative;
+
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
 .main-navigation__item:hover > .inner-navigation {
   display: block;
 }
 
 .main-navigation__link {
-  position: relative;
-
   display: block;
   padding: 7px 14px;
 
@@ -168,13 +172,15 @@ input[type="radio"].visually-hidden {
 
 .inner-navigation {
   position: absolute;
-  top: 60px;
+  top: 37px;
   left: -7px;
 
   display: none;
+  width: 143px;
+
+  background-color: #f8f7f4;
 
   border-radius: 5px;
-  padding-bottom: 5px;
 }
 
 .inner-navigation__item:first-child {
@@ -190,7 +196,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #323232;
 
-  background-color: #f8f7f4;
   text-decoration: none;
 }
 
@@ -212,6 +217,9 @@ input[type="radio"].visually-hidden {
 .inner-navigation__link-special {
   font-weight: 700;
   padding: 11px 21px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .inner-navigation__link-special::after {
@@ -233,6 +241,9 @@ input[type="radio"].visually-hidden {
 
 .inner-navigation__link-last-child {
   padding-bottom: 13px;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .main-header__search-wrapper {
@@ -276,6 +287,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-end;
 
+  position: relative;
+
   padding-top: 3px;
 
   /* Временно для сетки
@@ -292,6 +305,43 @@ input[type="radio"].visually-hidden {
 .user-navigation__cart {
   background-color: #a1b4a9;
   border-radius: 20px;
+}
+
+.user-navigation__form-login {
+  position: absolute;
+  top: 38px;
+  left: -174px;
+
+  padding: 20px 17px 20px 19px;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+
+  border-radius: 5px;
+}
+
+.user-navigation__form-item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.user-navigation__form-label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.user-navigation__form-input {
+  box-sizing: border-box;
+  width: 239px;
+  padding: 12px 14px;
+
+  font: inherit;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .user-navigation__login-link {
@@ -331,10 +381,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/login_hover.svg");
 }
 
-.user-navigation__form-login {
-  color: #323232;
+.user-navigation__form-info {
+  display: flex;
 
-  background-color: #f8f7f4;
+  margin: 0;
 }
 
 .user-navigation__form-link {
