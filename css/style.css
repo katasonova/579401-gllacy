@@ -328,6 +328,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation__item {
   margin-left: 10px;
+  padding-bottom: 5px;
+  margin-top: 5px;
 }
 
 .user-navigation__login,
@@ -336,18 +338,23 @@ input[type="radio"].visually-hidden {
   border-radius: 20px;
 }
 
+.user-navigation__login {
+}
+
 .user-navigation__login:hover > .user-navigation__form-login {
   display: flex;
 }
 
 .user-navigation__form-login {
   position: absolute;
-  top: 38px;
+  top: 43px;
   left: -174px;
 
-  display: flex;
-  flex-direction: column;
-  padding: 20px 17px 20px 19px;
+  display: none;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 277px;
+  padding: 20px 17px 22px 19px;
 
   color: #323232;
 
@@ -419,7 +426,9 @@ input[type="radio"].visually-hidden {
 .user-navigation__form-button {
   box-sizing: border-box;
   width: 50%;
+  max-width: 100px;
   padding: 13px 10px;
+  margin-right: 19px;
 
   text-align: center;
 
@@ -427,17 +436,29 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation__form-info {
-  width: 50%;
   margin: 0;
+  max-width: 122px;
 }
 
 .user-navigation__form-link {
+  display: block;
+  margin-bottom: -3px;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #323232;
 
   text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 0.3);
+}
+
+.user-navigation__form-link:hover,
+.user-navigation__form-link:focus,
+.user-navigation__form-link:active {
+  color: #e84d37;
+
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .user-navigation__cart-link {
@@ -1360,7 +1381,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  width: 477px;
+  width: 478px;
+  padding:
 }
 
 .modal-feedback__description {
