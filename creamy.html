@@ -63,34 +63,36 @@
       <li class="user-navigation__item user-navigation__cart">
         <a class="user-navigation__cart-link user-navigation__cart-link-active" href="cart.html">2 товара</a>
 
-        <table class="user-cart">
-          <thead class="visually-hidden user-cart__heading">
-            <tr class="user-cart__row">
-              <th class="user-cart__col">Наименование товара</th>
-              <th class="user-cart__col">Количество</th>
-              <th class="user-cart__col">Стоимость</th>
-            </tr>
-          </thead>
-          <tbody class="user-cart__body">
-            <tr class="user-cart__row">
-              <td class="user-cart__col"><img src="img/product-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Пломбир с апельсиновым джемом</td>
-              <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">200 руб.</span></td>
-              <td class="user-cart__col">300 руб.</td>
-            </tr>
-            <tr class="user-cart__row">
-              <td><img src="img/product-3.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">300 руб.</span></td>
-              <td class="user-cart__col">450 руб.</td>
-            </tr>
-          </tbody>
-          <tfoot class="user-cart__footer">
-            <tr class="user-cart__row">
-              <td class="user-cart__col" colspan="2">Итого:</td>
-              <td class="user-cart__col">750 руб.</td>
-            </tr>
-          </tfoot>
-        </table>
-        <a class="button user-cart__button">Оформить заказ</a>
+        <div class="user-cart-wrapper">
+          <table class="user-cart">
+            <thead class="visually-hidden user-cart__heading">
+              <tr class="user-cart__row">
+                <th class="user-cart__col">Наименование товара</th>
+                <th class="user-cart__col">Количество</th>
+                <th class="user-cart__col">Стоимость</th>
+              </tr>
+            </thead>
+            <tbody class="user-cart__body">
+              <tr class="user-cart__row">
+                <td class="user-cart__col"><img src="img/product-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Пломбир с апельсиновым джемом</td>
+                <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">200 руб.</span></td>
+                <td class="user-cart__col">300 руб.</td>
+              </tr>
+              <tr class="user-cart__row">
+                <td><img src="img/product-3.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">300 руб.</span></td>
+                <td class="user-cart__col">450 руб.</td>
+              </tr>
+            </tbody>
+            <tfoot class="user-cart__footer">
+              <tr class="user-cart__row">
+                <td class="user-cart__col" colspan="2">Итого:</td>
+                <td class="user-cart__col">750 руб.</td>
+              </tr>
+            </tfoot>
+          </table>
+          <a class="button user-cart__button">Оформить заказ</a>
+        </div>
       </li>
     </ul>
 
