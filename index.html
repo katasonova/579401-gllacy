@@ -280,21 +280,20 @@
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <p class="modal-feedback__description">Мы обязательно вам ответим!</p>
-    <button class="modal-feedback__button-close" type="button">Закрыть</button>
+    <button class="modal-feedback__button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-feedback__form-item">
-        <label class="modal-feedback__form-label" for="modal-feedback__name">Как вас зовут?</label>
+        <label class="visually-hidden modal-feedback__form-label" for="modal-feedback__name">Как вас зовут?</label>
         <input class="modal-feedback__form-input" id="modal-feedback__name" type="text" name="name" value="">
       </p>
       <p class="modal-feedback__form-item">
-        <label class="modal-feedback__form-label" for="modal-feedback__email">Ваша почта для ответа?</label>
+        <label class="visually-hidden modal-feedback__form-label" for="modal-feedback__email">Ваша почта для ответа?</label>
         <input class="modal-feedback__form-input" id="modal-feedback__email" type="email" name="email" value="">
       </p>
       <p class="modal-feedback__form-item">
-        <label class="modal-feedback__form-label" for="modal-feedback__message">Напишите что-нибудь...</label>
+        <label class="visually-hidden modal-feedback__form-label" for="modal-feedback__message">Напишите что-нибудь...</label>
         <textarea class="modal-feedback__form-textarea" id="modal-feedback__message" name="message"></textarea>
       </p>
-      <!--<a href="#">Отправить</a> Сначало было размечено ссылкой-->
       <button class="button modal-feedback__button" type="submit">Отправить</button>
     </form>
   </section>
