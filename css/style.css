@@ -63,7 +63,6 @@ input[type="radio"].visually-hidden {
 
 /* Временно для сетки */
 
-.main-header__search,
 .modal,
 .user-cart,
 .user-cart__button {
@@ -215,6 +214,8 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-navigation__link-special {
+  position: relative;
+
   font-weight: 700;
   padding: 11px 21px;
 
@@ -247,6 +248,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header__search-wrapper {
+  position: relative;
+
   margin-left: auto;
   width: 32px;
   height: 32px;
@@ -277,10 +280,37 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/search_hover.svg");
 }
 
+.main-header__search-wrapper:hover > .main-header__search {
+  display: block;
+}
+
 .main-header__search {
+  position: absolute;
+  top: 39px;
+  left: -311px;
+
+  display: none;
+  padding: 20px 15px;
+
   color: #323232;
 
   background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.main-header__search-item {
+  margin: 0;
+}
+
+.main-header__search-input {
+  box-sizing: border-box;
+  width: 311px;
+  padding: 12px 14px;
+
+  font: inherit;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .user-navigation {
@@ -307,11 +337,16 @@ input[type="radio"].visually-hidden {
   border-radius: 20px;
 }
 
+.user-navigation__login:hover > .user-navigation__form-login {
+  display: block;
+}
+
 .user-navigation__form-login {
   position: absolute;
   top: 38px;
   left: -174px;
 
+  display: none;
   padding: 20px 17px 20px 19px;
 
   color: #323232;
@@ -381,9 +416,17 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/login_hover.svg");
 }
 
-.user-navigation__form-info {
-  display: flex;
+.user-navigation__form-button {
+  box-sizing: border-box;
+  min-width: 100px;
+  padding: 13px 10px;
 
+  text-align: center;
+
+  border-radius: 18px;
+}
+
+.user-navigation__form-info {
   margin: 0;
 }
 
