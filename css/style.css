@@ -62,8 +62,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Временно для сетки */
-
-.user-cart,
 .user-cart__button {
   display: none;
 }
@@ -470,6 +468,10 @@ input[type="radio"].visually-hidden {
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
+.user-navigation__cart {
+  position: relative;
+}
+
 .user-navigation__cart-link {
   position: relative;
 
@@ -529,10 +531,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-cart {
+  position: absolute;
+
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
   color: #323232;
+
+
 }
 
 .user-cart__cost {
@@ -582,6 +588,16 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   position: relative;
+
+  display: none;
+
+  min-height: 768px;
+}
+
+.slider-item-active {
+  position: relative;
+
+  min-height: 768px;
 }
 
 .slider-item__description {
@@ -598,10 +614,16 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.slider-item__image {
+.slider-item__image-special {
   z-index: 1;
   margin-top: -237px;
   margin-left: 51px;
+}
+
+.slider-item__image {
+  z-index: 1;
+  margin-top: -237px;
+  margin-left: 39px;
 }
 
 .slider-item__link {
