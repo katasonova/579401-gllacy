@@ -1365,6 +1365,12 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.map__image-yandex {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .contacts {
   position: absolute;
   top: 62px;
