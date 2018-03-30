@@ -52,11 +52,11 @@
             <label class="user-navigation__form-label" for="user-navigation__form-password">Пароль</label>
             <input class="user-navigation__form-input" id="user-navigation__form-password" type="password" name="password"></p>
 
+          <button class="button user-navigation__form-button" type="submit">Войти</button>
+
           <p class="user-navigation__form-info">
             <a class="user-navigation__form-link" href="restore.html">Забыли пароль?</a>
             <a class="user-navigation__form-link" href="registration.html">Новая регистрация</a></p>
-
-          <button class="button user-navigation__form-button" type="submit">Войти</button>
         </form>
 
       </li>
@@ -67,26 +67,32 @@
           <table class="user-cart">
             <thead class="visually-hidden user-cart__heading">
               <tr class="user-cart__row">
-                <th class="user-cart__col">Наименование товара</th>
-                <th class="user-cart__col">Количество</th>
-                <th class="user-cart__col">Стоимость</th>
+                <th class="user-cart__col-th">Удалить товар</th>
+                <th class="user-cart__col-th">Предпросмотр товара</th>
+                <th class="user-cart__col-th">Наименование товара</th>
+                <th class="user-cart__col-th">Количество</th>
+                <th class="user-cart__col-th">Стоимость</th>
               </tr>
             </thead>
             <tbody class="user-cart__body">
               <tr class="user-cart__row">
-                <td class="user-cart__col"><img class="user-cart__image" src="img/product-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Пломбир с апельсиновым джемом</td>
+                <td class="user-cart__col"><button class="user-cart__button-reset button-reset-1"><span class="visually-hidden ">Удалить</span></button></td>
+                <td class="user-cart__col"><img class="user-cart__image" src="img/product-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></td>
+                <td class="user-cart__col">Пломбир с апельсиновым джемом</td>
                 <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">200 руб.</span></td>
                 <td class="user-cart__col">300 руб.</td>
               </tr>
               <tr class="user-cart__row">
-                <td class="user-cart__col"><img class="user-cart__image" src="img/product-3.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="user-cart__col"><button class="user-cart__button-reset button-reset-2"><span class="visually-hidden ">Удалить</span></button></td>
+                <td class="user-cart__col"><img class="user-cart__image" src="img/product-3.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></td>
+                <td class="user-cart__col">Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td class="user-cart__col">1,5 кг х <span class="user-cart__cost">300 руб.</span></td>
                 <td class="user-cart__col">450 руб.</td>
               </tr>
             </tbody>
             <tfoot class="user-cart__footer">
               <tr class="user-cart__row">
-                <td class="user-cart__col" colspan="3">Итого: 750 руб.</td>
+                <td class="user-cart__col" colspan="5">Итого: 750 руб.</td>
               </tr>
             </tfoot>
           </table>
