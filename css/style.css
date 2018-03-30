@@ -541,7 +541,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 20px 15px 23px 16px;
+  padding: 20px 17px 23px 16px;
 
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -560,6 +560,9 @@ input[type="radio"].visually-hidden {
 
 .user-cart__col {
   padding: 0;
+  padding-top: 5px;
+
+  vertical-align: top;
 }
 
 .user-cart__col:first-child {
@@ -567,7 +570,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-cart__col:nth-child(2) {
-  width: 118px;
+  width: 122px;
 
   text-align: center;
 }
