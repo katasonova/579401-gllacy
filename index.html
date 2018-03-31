@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
   <header class="main-header">
 
     <nav class="main-navigation">
@@ -96,30 +100,32 @@
     <section class="slider">
       <h2 class="visually-hidden">Слайдер с новинками</h2>
 
-      <div class="slider-item-active">
-        <p class="slider-item__description">Крем-брюле и пломбир с малиновым джемом</p>
-        <img class="slider-item__image-special" src="img/slider-1.png" width="1045" height="881" alt="Слайдер - крем-брюле и пломбир с малиновым джемом">
-        <a class="button slider-item__link" href="creme_brulee.html">Давайте оба!</a>
-      </div>
-      <div class="slider-item">
-        <p class="slider-item__description">Шоколадный пломбир и лимонный сорбет</p>
-        <img class="slider-item__image" src="img/slider-2.png" width="1065" height="859" alt="Слайдер - шоколадный пломбир и лимонный сорбет">
-        <a class="button slider-item__link" href="shoko_plombir.html">Давайте оба!</a>
-      </div>
-      <div class="slider-item">
-        <p class="slider-item__description">Пломбир с помадкой и клубничный щербет</p>
-        <img class="slider-item__image" src="img/slider-3.png" width="1079" height="854" alt="Слайдер - пломбир с помадкой и клубничный щербет">
-        <a class="button slider-item__link" href="fondant.html">Давайте оба!</a>
-      </div>
-      <ul class="slider-button">
-        <li class="slider-button__item slider-button__item-active">
+      <div class="slider-button">
+        <label class="slider-button__item" for="product-1">
           <span class="visually-hidden">Первый слайд</span>
-        </li>
-        <li class="slider-button__item">
+        </label>
+        <label class="slider-button__item" for="product-2">
           <span class="visually-hidden">Второй слайд</span>
-        </li>
-        <li class="slider-button__item">
+        </label>
+        <label class="slider-button__item" for="product-3">
           <span class="visually-hidden">Третий слвйд</span>
+        </label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-item" id="slide1">
+          <p class="slider-item__description">Крем-брюле и пломбир с малиновым джемом</p>
+          <img class="slider-item__image" src="img/slider-1.png" width="1045" height="881" alt="Слайдер - крем-брюле и пломбир с малиновым джемом">
+          <a class="button slider-item__link" href="creme_brulee.html">Давайте оба!</a>
+        </li>
+        <li class="slider-item" id="slide2">
+          <p class="slider-item__description">Шоколадный пломбир и лимонный сорбет</p>
+          <img class="slider-item__image" src="img/slider-2.png" width="1065" height="859" alt="Слайдер - шоколадный пломбир и лимонный сорбет">
+          <a class="button slider-item__link" href="shoko_plombir.html">Давайте оба!</a>
+        </li>
+        <li class="slider-item" id="slide3">
+          <p class="slider-item__description">Пломбир с помадкой и клубничный щербет</p>
+          <img class="slider-item__image" src="img/slider-3.png" width="1079" height="854" alt="Слайдер - пломбир с помадкой и клубничный щербет">
+          <a class="button slider-item__link" href="fondant.html">Давайте оба!</a>
         </li>
       </ul>
     </section>
@@ -314,7 +320,19 @@
   <div class="modal modal-overlay"></div>
 
   <script src="js/popup.js"></script>
+  <script>
+    var slider = document.querySelector(".slider");
+    var active = document.querySelector(".slider-item-active");
+    var item = document.querySelector(".slider-item");
 
+    var body = document.querySelector("body");
+
+    body.addEventListener("online", function(evt) {
+      evt.preventDefault();
+      body.classList.add("js-slider-2");
+    })
+
+  </script>
 </body>
 
 </html>

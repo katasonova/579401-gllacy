@@ -9,6 +9,14 @@ body {
   background-color: #849d8f;
 }
 
+.js-slider-2 {
+  background-color: #8996a6;
+}
+
+.js-slider-3 {
+  background-color: #9d8b84;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -810,10 +818,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   text-align: right;
   color: #ffffff;
-
-  /* Временно для сетки
-  min-height: 38px;
-  background-color: khaki;*/
 }
 
 .main-header__phone {
@@ -831,6 +835,15 @@ input[type="radio"].visually-hidden {
   max-width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
+
+  text-align: center;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .slider-item {
@@ -864,13 +877,7 @@ input[type="radio"].visually-hidden {
 .slider-item__image {
   z-index: 1;
   margin-top: -237px;
-  margin-left: 39px;
-}
-
-.slider-item__image-special {
-  z-index: 1;
-  margin-top: -237px;
-  margin-left: 51px;
+  margin-left: 2px;
 }
 
 .slider-item__link {
@@ -891,36 +898,34 @@ input[type="radio"].visually-hidden {
 
 .slider-button {
   position: absolute;
-  top: 446px;
-  left: 27px;
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  bottom: 301px;
+  left: 27;
+  z-index: 20;
 }
 
 .slider-button__item {
-  margin-right: 7px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 4px;
 
-  width: 18px;
-  height: 18px;
+  vertical-align: top;
 
+  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
-
   cursor: pointer;
 }
 
-.slider-button__item-active {
+#product-1:checked ~ .page-main #slide1,
+#product-2:checked ~ .page-main #slide2,
+#product-3:checked ~ .page-main #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .page-main label[for="product-1"],
+#product-2:checked ~ .page-main label[for="product-2"],
+#product-3:checked ~ .page-main label[for="product-3"] {
   background-color: #ffffff;
 }
 
