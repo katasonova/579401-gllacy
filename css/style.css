@@ -11,14 +11,20 @@ body {
 
 .js-slider-1 {
   background-color: #849d8f;
+
+  transition: background-color 0.5s ease;
 }
 
 .js-slider-2 {
   background-color: #8996a6;
+
+  transition: background-color 0.5s ease;
 }
 
 .js-slider-3 {
   background-color: #9d8b84;
+
+  transition: background-color 0.5s ease;
 }
 
 img {
@@ -303,7 +309,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   padding: 7px;
 
-  background-color: #a1b6aa;
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -410,7 +416,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation__login,
 .user-navigation__cart {
-  background-color: #a1b4a9;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
 
