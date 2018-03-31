@@ -939,6 +939,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+#product-1:hover ~ .page-main label[for="product-1"],
+#product-2:hover ~ .page-main label[for="product-2"],
+#product-3:hover ~ .page-main label[for="product-3"] {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .js-radio-checked {
   background-color: #ffffff;
 }
@@ -2351,6 +2357,30 @@ input[type="radio"].visually-hidden {
   padding-right: 0;
 }
 
+.filters__form-input-radio:checked {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filters__form-input-radio:focus {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filters__form-input-label {
+  position: relative;
+
+  display: block;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.filters__form-input-radio:hover + .filters__ladel-radio,
+.filters__form-input-radio:focus + .filters__ladel-radio {
+  background-image: url(../img/radio-off_hover.svg);
+}
+
 .filters__ladel-radio:not(.filters__ladel-radio-checked)::before {
   content: "";
 
@@ -2368,10 +2398,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.filters__ladel-radio:not(.filters__ladel-radio-checked):hover::before,
+/*.filters__ladel-radio:not(.filters__ladel-radio-checked):hover::before,
 .filters__ladel-radio:not(.filters__ladel-radio-checked):focus::before {
   background-image: url(../img/radio-off_hover.svg);
-}
+}*/
 
 .filters__ladel-radio-checked::before {
   content: "";
@@ -2412,10 +2442,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.filters__ladel-checkbox:not(.filters__ladel-checkbox-checked):hover::before,
+/*.filters__ladel-checkbox:not(.filters__ladel-checkbox-checked):hover::before,
 .filters__ladel-checkbox:not(.filters__ladel-checkbox-checked):focus::before {
   background-image: url(../img/checkbox-off_hover.svg);
-}
+}*/
 
 .filters__ladel-checkbox-checked::before {
   content: "";
