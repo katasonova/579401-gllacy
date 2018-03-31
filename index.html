@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <input class="slider-controller-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="slider-controller-2 visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="slider-controller-3 visually-hidden" type="radio" id="product-3" name="toggle">
 
   <header class="main-header">
 
@@ -321,16 +321,43 @@
 
   <script src="js/popup.js"></script>
   <script>
-    var slider = document.querySelector(".slider");
-    var active = document.querySelector(".slider-item-active");
-    var item = document.querySelector(".slider-item");
-
+    var product1 = document.querySelector("#product-1");
+    var product2 = document.querySelector("#product-2");
+    var product3 = document.querySelector("#product-3");
+    /*var label1 = document.querySelector([for=product-1]);
+    var label2 = document.querySelector([for=product-2]);
+    var label3 = document.querySelector([for=product-3]);*/
     var body = document.querySelector("body");
 
-    body.addEventListener("online", function(evt) {
+    product1.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      /*label1.classList.add("js-radio-checked");
+      label2.classList.remove("js-radio-checked");
+      label3.classList.remove("js-radio-checked");*/
+      body.classList.add("js-slider-1");
+      body.classList.remove("js-slider-2");
+      body.classList.remove("js-slider-3");
+    });
+
+    product2.addEventListener("click", function(evt) {
       evt.preventDefault();
       body.classList.add("js-slider-2");
-    })
+      body.classList.remove("js-slider-1");
+      body.classList.remove("js-slider-3");
+      /*label2.classList.add("js-radio-checked");
+      label1.classList.remove("js-radio-checked");
+      label3.classList.remove("js-radio-checked");*/
+    });
+
+    product3.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      body.classList.add("js-slider-3");
+      body.classList.remove("js-slider-1");
+      body.classList.remove("js-slider-2");
+      /*label3.classList.add("js-radio-checked");
+      label1.classList.remove("js-radio-checked");
+      label2.classList.remove("js-radio-checked");*/
+    });
 
   </script>
 </body>

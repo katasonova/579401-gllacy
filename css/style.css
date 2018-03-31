@@ -9,6 +9,10 @@ body {
   background-color: #849d8f;
 }
 
+.js-slider-1 {
+  background-color: #849d8f;
+}
+
 .js-slider-2 {
   background-color: #8996a6;
 }
@@ -929,6 +933,10 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.js-radio-checked {
+  background-color: #ffffff;
+}
+
 .special-offer {
   position: relative;
   z-index: 3;
@@ -947,6 +955,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 
@@ -979,12 +988,16 @@ input[type="radio"].visually-hidden {
   background-color: #ac0933;
   background-image: url(../img/raspberry_bg.jpg);
   background-repeat: no-repeat;
+
+  background-size: cover;
 }
 
 .special-offer__item:last-child {
   background-color: #5b3622;
   background-image: url(../img/shoko_bg.jpg);
   background-repeat: no-repeat;
+
+  background-size: cover;
 }
 
 .special-offer__heading {
@@ -1350,6 +1363,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: flex-start;
 }
 
 .blog {
@@ -1360,6 +1374,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  align-items: flex-start;
 
   width: 560px;
   min-height: 220px;
@@ -1371,6 +1386,8 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/strawberry_bg.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
+
+  background-size: cover;
 }
 
 .blog__heading {
@@ -1407,6 +1424,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
   /*border: 5px solid transparent;
   border-image: 10 repeating-linear-gradient(135deg, transparent, transparent 10px, #92cdff 10px, #92cdff 20px, transparent 20px, transparent 30px, #fe9e90 30px, #fe9e90 40px);
   border-radius: 15px;*/
