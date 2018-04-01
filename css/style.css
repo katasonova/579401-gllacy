@@ -2455,6 +2455,27 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.label-select {
+  position: relative;
+}
+
+.label-select::after {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 168px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 5;
+}
+
 .filters__form-select,
 .filters__form-range,
 .filters__form-list,
@@ -2472,7 +2493,8 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   margin-top: 5px;
-  padding: 6px 12px 8px 12px;
+  /*padding: 6px 12px 8px 12px;*/
+  padding: 9px 35px 9px 14px;
 
   border: none;
   border-radius: 50px;
@@ -2494,7 +2516,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.label-select::after {
+/*.label-select::after {
   content: "";
 
   position: absolute;
@@ -2505,12 +2527,18 @@ input[type="radio"].visually-hidden {
   height: 11px;
 
   background-color: red;
-}
+}*/
 
-.filters__form-select:hover,
-.filters__form-select:focus {
+.label-select + .filters__form-select:hover ,
+.label-select + .filters__form-select:focus {
   color: #323232;
   background-color: white;
+
+  background-image: url("../img/select-arrow_hover.svg");
+  background-repeat: no-repeat;
+  background-position: 168px 13px;
+
+  z-index: 6;
 }
 
 .filters__form-range {
