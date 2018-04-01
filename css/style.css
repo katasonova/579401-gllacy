@@ -295,7 +295,8 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   width: 32px;
   height: 32px;
-  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-top: 8px;
 
   cursor: pointer;
 }
@@ -328,7 +329,7 @@ input[type="radio"].visually-hidden {
 
 .main-header__search {
   position: absolute;
-  top: 39px;
+  top: 36px;
   left: -311px;
 
   display: none;
@@ -416,8 +417,8 @@ input[type="radio"].visually-hidden {
 
 .user-navigation__login,
 .user-navigation__cart {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+  padding-bottom: 5px;
+  margin-top: 5px;
 }
 
 .user-navigation__login:hover > .user-navigation__form-login {
@@ -428,7 +429,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation__form-login {
   position: absolute;
-  top: 38px;
+  top: 43px;
   left: -174px;
 
   display: none;
@@ -508,6 +509,8 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #ffffff;
 
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
   text-decoration: none;
 }
 
@@ -594,6 +597,8 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #ffffff;
 
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
   text-decoration: none;
 }
 
@@ -2366,12 +2371,12 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.filters__form-input-radio:hover + .filters__ladel-radio,
-.filters__form-input-radio:focus + .filters__ladel-radio {
-  background-image: url(../img/radio-off_hover.svg);
-}
 
-.filters__ladel-radio:not(.filters__ladel-radio-checked)::before {
+
+
+
+
+.filters__ladel-radio::before {
   content: "";
 
   position: absolute;
@@ -2381,42 +2386,28 @@ input[type="radio"].visually-hidden {
   width: 26px;
   height: 26px;
 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+}
+
+input[type="radio"] + .filters__ladel-radio::before {
   background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  cursor: pointer;
 }
 
-/*.filters__ladel-radio:not(.filters__ladel-radio-checked):hover::before,
-.filters__ladel-radio:not(.filters__ladel-radio-checked):focus::before {
+.filters__form-input-radio:hover + .filters__ladel-radio::before,
+.filters__form-input-radio:focus + .filters__ladel-radio::before {
   background-image: url(../img/radio-off_hover.svg);
-}*/
-
-.filters__ladel-radio-checked::before {
-  content: "";
-
-  position: absolute;
-  top: -3px;
-  left: -33px;
-
-  width: 26px;
-  height: 26px;
-
-  background-image: url("../img/radio-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  cursor: pointer;
 }
 
-.filters__ladel-radio-checked:hover::before,
-.filters__ladel-radio-checked:focus::before {
+input[type="radio"]:checked + .filters__ladel-radio::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+input[type="radio"]:checked + .filters__ladel-radio:hover::before,
+input[type="radio"]:checked + .filters__ladel-radio:focus::before {
   background-image: url("../img/radio-on_hover.svg");
-}
-
-.filters__form-input-radio:checked {
-  background-image: url("../img/radio-on.svg");
 }
 
 .filters__form-input-radio:focus {
@@ -2424,7 +2415,7 @@ input[type="radio"].visually-hidden {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filters__ladel-checkbox:not(.filters__ladel-checkbox-checked)::before {
+.filters__ladel-checkbox::before {
   content: "";
 
   position: absolute;
@@ -2441,30 +2432,21 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-/*.filters__ladel-checkbox:not(.filters__ladel-checkbox-checked):hover::before,
-.filters__ladel-checkbox:not(.filters__ladel-checkbox-checked):focus::before {
-  background-image: url(../img/checkbox-off_hover.svg);
-}*/
-
-.filters__ladel-checkbox-checked::before {
-  content: "";
-
-  position: absolute;
-  top: -3px;
-  left: -33px;
-
-  width: 26px;
-  height: 26px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  cursor: pointer;
+input[type="checkbox"] + .filters__ladel-checkbox::before {
+  background-image: url("../img/checkbox-off.svg");
 }
 
-.filters__ladel-checkbox-checked:hover::before,
-.filters__ladel-checkbox-checked:focus::before {
+.filters__form-input-checkbox:hover + .filters__ladel-checkbox::before,
+.filters__form-input-checkbox:focus + .filters__ladel-checkbox::before {
+  background-image: url(../img/checkbox-off_hover.svg);
+}
+
+input[type="checkbox"]:checked + .filters__ladel-checkbox::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+input[type="checkbox"]:checked + .filters__ladel-checkbox:hover::before,
+input[type="checkbox"]:checked + .filters__ladel-checkbox:focus::before {
   background-image: url("../img/checkbox-on_hover.svg");
 }
 
