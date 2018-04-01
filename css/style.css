@@ -1144,9 +1144,9 @@ input[type="radio"].visually-hidden {
   z-index: 4;
 }
 
-.catalog__product:hover + .catalog__link,
-.catalog__product:active + .catalog__link,
-.catalog__product:active + .catalog__link {
+.catalog__product:hover .catalog__link,
+.catalog__product:active .catalog__link,
+.catalog__product:active .catalog__link {
   display: block;
 }
 
