@@ -2650,12 +2650,12 @@ input[type="radio"] + .filters__ladel-radio::before {
   background-image: url(../img/radio-off_hover.svg);
 }
 
-input[type="radio"]:checked:focus + .filters__ladel-radio::before {
+input[type="radio"]:checked + .filters__ladel-radio::before {
   background-image: url("../img/radio-on.svg");
 }
 
-input[type="radio"]:checked:focus + .filters__ladel-radio:hover::before,
-input[type="radio"]:checked:focus + .filters__ladel-radio:focus::before {
+input[type="radio"]:checked + .filters__ladel-radio:hover::before,
+input[type="radio"]:checked + .filters__ladel-radio:focus::before {
   background-image: url("../img/radio-on_hover.svg");
 }
 
@@ -2685,7 +2685,7 @@ input[type="checkbox"]:focus + .filters__ladel-checkbox::before {
   background-image: url(../img/checkbox-off_hover.svg);
 }
 
-input[type="checkbox"]:checked:focus + .filters__ladel-checkbox::before {
+input[type="checkbox"]:checked + .filters__ladel-checkbox::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
