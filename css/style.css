@@ -2621,10 +2621,6 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.filters__form-input-label:active {
-  outline: none;
-}
-
 .filters__ladel-radio::before {
   content: "";
 
@@ -2659,6 +2655,12 @@ input[type="radio"]:checked + .filters__ladel-radio:focus::before {
   background-image: url("../img/radio-on_hover.svg");
 }
 
+.filters__form-input-radio:focus + .filters__ladel-radio::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filters__ladel-checkbox::before {
   content: "";
 
@@ -2676,7 +2678,7 @@ input[type="radio"]:checked + .filters__ladel-radio:focus::before {
   cursor: pointer;
 }
 
-input[type="checkbox"]:focus + .filters__ladel-checkbox::before {
+input[type="checkbox"] + .filters__ladel-checkbox::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
